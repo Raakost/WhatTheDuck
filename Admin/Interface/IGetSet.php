@@ -4,12 +4,12 @@ interface IGetSet
 {
     public function Create();
 
-    public function Get();
+    public function Get($ID);
 
     public function GetAll();
 
-    public function Update();
+    public function Update($ID);
 
-    public function Delete();
+    public function Delete($ID);
 
 }

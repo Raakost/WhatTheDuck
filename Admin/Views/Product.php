@@ -1,4 +1,6 @@
-<?php ?>
+<?php
+require_once("../Database/DBConnectionTest.php")
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,6 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 </head>
-
 <body class="">
 <div class="wrapper ">
     <?php include("PartialViews/SideMenu.php"); ?>

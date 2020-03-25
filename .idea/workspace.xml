@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="" />
+    <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Admin/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Admin/front-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/DBConnectionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/DBConnectionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/HomeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/ProductModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Interface/IGetSet.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Interface/IGetSet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Views/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Views/PartialViews/SideMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/PartialViews/SideMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Views/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/Product.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,9 +37,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Backend2020" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin\Views" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin\Database" />
     </key>
   </component>
@@ -41,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585127896343</updated>
-      <workItem from="1585127897510" duration="2547000" />
+      <workItem from="1585127897510" duration="15374000" />
     </task>
     <servers />
   </component>
@@ -49,13 +64,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1585133429358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585133429358" />
     <state x="1183" y="339" key="NewPhpClassDialog" timestamp="1585128463548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1183" y="339" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585128463548" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1585128562696">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1585167479120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585128562696" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585167479120" />
   </component>
 </project>

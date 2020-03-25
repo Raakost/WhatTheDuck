@@ -1,18 +1,4 @@
 <?php
-/* ROUTER STUFF
-include "../Router/Router.php";
-
-$request = $_SERVER['REQUEST_URI'];
-$router = new Router($request);
-
-$router->get('/', 'Views/Home');
-$router->get('/', 'Views/News');
-$router->get('/', 'Views/Order');
-$router->get('/', 'Views/OrderDetails');
-$router->get('/', 'Views/Product');
-$router->get('/', 'Views/Special');
-
-echo "test";*/
 ?>
 <!DOCTYPE html>
 <html lang="en">

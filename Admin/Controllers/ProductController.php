@@ -1,13 +1,33 @@
 <?php
+require("../Database/Models/ProductModel.php");
 
-Class ProductController
+Class ProductController implements IGetSet
 {
-    private $product;
 
-    public function __construct()
+    public function Create()
     {
-        $this->product = new DBModel();
+        // TODO: Implement Create() method.
     }
 
+    public function Get($ID)
+    {
+        // TODO: Implement Get() method.
+    }
+
+    public function GetAll()
+    {
+        $model = new ProductModel();
+        $model->GetAll();
+    }
+
+    public function Update($ID)
+    {
+        // TODO: Implement Update() method.
+    }
+
+    public function Delete($ID)
+    {
+        // TODO: Implement Delete() method.
+    }
 }
 

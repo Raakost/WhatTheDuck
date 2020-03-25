@@ -4,7 +4,7 @@
         <a href="./Home.php" class="simple-text logo-normal" style="text-align: center;">
             What the duck?!
             <div class="logo-image-big">
-                <img src="../assets/img/logo-white.png" style="border-radius:150px; max-width: 35%;">
+                <img src="assets/img/logo-white.png" style="border-radius:150px; max-width: 35%;">
             </div>
         </a>
     </div>
