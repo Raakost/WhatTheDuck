@@ -6,12 +6,11 @@ class HomeController
 
     public function __construct()
     {
-        $this->model = new HomeModel();
+        $this->model = new Home();
     }
 
-    public function Get()
+    public function Index()
     {
-        $this->model->Get();
-        require_once("Admin_web/Views/Home.php");
+        include(__DIR__ . "./../Views/Home.php");
     }
 }

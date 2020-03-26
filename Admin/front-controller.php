@@ -1,4 +1,16 @@
 <?php
+// Models
+require_once("Database/Models/Home.php");
+require_once("Database/Models/Product.php");
+require_once("Database/Models/Order.php");
+require_once("Database/Models/News.php");
+require_once("Database/Models/Special.php");
+// Controllers
+require_once("Controllers/HomeController.php");
+require_once("Controllers/ProductController.php");
+require_once("Controllers/OrderController.php");
+require_once("Controllers/NewsController.php");
+require_once("Controllers/SpecialController.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,16 +26,35 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet"/>
-</head>
 
+</head>
 <body class="">
 <div class="wrapper ">
     <?php include("views/PartialViews/SideMenu.php"); ?>
     <div class="main-panel">
         <?php include("views/PartialViews/Navbar.php"); ?>
+        <h5>front controller routing</h5>
         <?php switch ($_SERVER['REQUEST_URI']) {
-            case '/home':
-                include("Views/Home.php");
+            case '/projects/WhatTheDuck/Admin/Home.php':
+                $controller = new HomeController();
+                $controller->Index();
+                break;
+            case '/projects/WhatTheDuck/Admin/Product.php':
+                $controller = new ProductController();
+                $controller->Index();
+                break;
+            case '/projects/WhatTheDuck/Admin/Order.php':
+                $controller = new OrderController();
+                $controller->Index();
+                break;
+            case '/projects/WhatTheDuck/Admin/News.php':
+                $controller = new NewsController();
+                $controller->Index();
+                break;
+            case '/projects/WhatTheDuck/Admin/Special.php':
+                $controller = new SpecialController();
+                $controller->Index();
+                break;
         } ?>
         <?php include("views/PartialViews/Footer.php"); ?>
     </div>
@@ -33,22 +64,17 @@
 <script src="assets/js/core/popper.min.js"></script>
 <script src="assets/js/core/bootstrap.min.js"></script>
 <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-<!-- Chart JS -->
-<script src="assets/js/plugins/chartjs.min.js"></script>
+
 <!--  Notifications Plugin    -->
 <script src="assets/js/plugins/bootstrap-notify.js"></script>
+
 <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
-<script>
-    $(document).ready(function () {
-        // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
-        demo.initChartsPages();
-    });
-</script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
 </body>
-
 </html>
-
-

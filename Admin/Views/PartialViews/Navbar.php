@@ -10,7 +10,7 @@
                     <span class="navbar-toggler-bar bar3"></span>
                 </button>
             </div>
-            <a class="navbar-brand">General Info</a>
+            <a class="navbar-brand"></a>
         </div>
 
     </div>
