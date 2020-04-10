@@ -1,6 +1,6 @@
 <?php
 
-$db_name = "mysql:dbname=DWPTest;";
+$db_name = "mysql:dbname=duckshop;";
 $db_host = "host=localhost;";
 $db_charset = "charset=utf8";
 

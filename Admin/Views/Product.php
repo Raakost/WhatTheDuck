@@ -66,15 +66,17 @@
                 <div class="card-body">
                     <div class="col-md-12" style="padding:0">
                         <div class="table-responsive">
-                            <table id="product-table" class="table table-hover">
+                            <table id="product-table" class="table table-hover table-striped order-column">
                                 <thead class="text-primary table-header">
-                                <th>Id</th>
-                                <th>Name</th>
-                                <th>Description</th>
-                                <th>Price</th>
-                                <th>Category</th>
-                                <th>Image</th>
-                                <th class="text-right"></th>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                    <th>Category</th>
+                                    <th>Image</th>
+                                    <th class="text-right"></th>
+                                </tr>
                                 </thead>
                                 <tbody>
                                 <form action="">
@@ -139,7 +141,6 @@
             </div>
         </div>
     </div>
-
 </div>
 <script>
     $(document).ready(function () {

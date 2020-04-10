@@ -5,13 +5,19 @@ require_once("Database/Models/Product.php");
 require_once("Database/Models/Order.php");
 require_once("Database/Models/News.php");
 require_once("Database/Models/Special.php");
+
 // Controllers
 require_once("Controllers/HomeController.php");
 require_once("Controllers/ProductController.php");
 require_once("Controllers/OrderController.php");
 require_once("Controllers/NewsController.php");
-require_once("Controllers/SpecialController.php")
+require_once("Controllers/SpecialController.php");
+
+// Database
+require_once("Database/Constants.php");
+require_once("Database/DBConnection.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +32,9 @@ require_once("Controllers/SpecialController.php")
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet"/>
-
+    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 </head>
 <body class="">
 <div class="wrapper ">
@@ -60,20 +68,15 @@ require_once("Controllers/SpecialController.php")
     </div>
 </div>
 <!--   Core JS Files   -->
-<script src="assets/js/core/jquery.min.js"></script>
 <script src="assets/js/core/popper.min.js"></script>
 <script src="assets/js/core/bootstrap.min.js"></script>
 <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-
 <!--  Notifications Plugin    -->
 <script src="assets/js/plugins/bootstrap-notify.js"></script>
-
 <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
 <script src="assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
-
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-
 <!-- (Optional) Latest compiled and minified JavaScript translation files -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
 </body>

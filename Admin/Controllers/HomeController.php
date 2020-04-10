@@ -1,4 +1,5 @@
 <?php
+//include("./Database/Models/Home.php");
 
 class HomeController
 {
@@ -11,6 +12,8 @@ class HomeController
 
     public function Index()
     {
+        $companyInfo = $this->model->GetCompanyInfo();
+        $businessHours = $this->model->GetBusinessHours();
         include(__DIR__ . "./../Views/Home.php");
     }
 }

@@ -16,7 +16,8 @@
                         </div>
                         <div class="col-md-4">
                             <img src="assets/img/trump.jpeg" class="img-thumbnail"
-                                 alt="Responsive image" style="border:none; min-width: 150px; max-width: 150px; padding:25px;">
+                                 alt="Responsive image"
+                                 style="border:none; min-width: 150px; max-width: 150px; padding:25px;">
                         </div>
                     </div>
                     <div class="row">
@@ -40,14 +41,16 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table id="news-table" class="table table-hover">
+                            <table id="news-table" class="table table-hover table-striped order-column">
                                 <thead class="text-primary table-header">
-                                <th>Id</th>
-                                <th>Date</th>
-                                <th>Title</th>
-                                <th>Description</th>
-                                <th>Image</th>
-                                <th class="text-right"></th>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Date</th>
+                                    <th>Title</th>
+                                    <th>Description</th>
+                                    <th>Image</th>
+                                    <th class="text-right"></th>
+                                </tr>
                                 </thead>
                                 <tbody>
                                 <form action="">
