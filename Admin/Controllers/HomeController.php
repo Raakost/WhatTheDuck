@@ -1,5 +1,4 @@
 <?php
-//include("./Database/Models/Home.php");
 
 class HomeController
 {
