@@ -16,4 +16,8 @@ class HomeController
         $businessHours = $this->model->GetBusinessHours();
         include(__DIR__ . "./../Views/Home.php");
     }
+
+    public function Save(){
+
+    }
 }

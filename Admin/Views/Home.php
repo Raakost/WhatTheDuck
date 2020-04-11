@@ -42,11 +42,11 @@
                                 <div class="col-md-6">
                                     <label>' . $row["Weekday"] . '</label>
                                     <input type="time" class="time form-control"
-                                           style="height: 32px; min-width: 83px;" value=' . $row["Open_at"] . '>
+                                           style="height: 32px; min-width: 100px;" value=' . $row["Open_at"] . '>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="time" class="time form-control"
-                                           style="height: 32px; margin-top:25px;min-width: 83px;" value="' . $row["Close_at"] . '">
+                                           style="height: 32px; margin-top:25px;min-width: 100px;" value="' . $row["Close_at"] . '">
                                 </div>
                             </div>';
                             } ?>
@@ -60,7 +60,7 @@
                             <div class="card-body">
                                         <textarea id="companyDescription"
                                                   class="form-control"
-                                                  style="min-height: 150px;"><?php echo $companyInfo["Description"]; ?>
+                                                  style="min-height: 150px; padding: 6px 12px;"><?php echo $companyInfo["Description"]; ?>
                                         </textarea>
                                 <button class="btn btn-primary" style="float: right;">Save</button>
                             </div>
@@ -71,9 +71,3 @@
         </div>
     </div>
 </div>
-<script>
-    // Time Picker Initialization
-    $(document).ready(function () {
-        $('.time').pickatime({});
-    });
-</script>
