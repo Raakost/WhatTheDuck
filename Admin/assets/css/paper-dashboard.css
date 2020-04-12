@@ -6573,6 +6573,9 @@ License - nucleoapp.com/license/
     border-color: #66615b;
 }
 
-#product-table_filter {
+#product-table_filter  {
+    float: right;
+}
+#order-table_filter {
     float: right;
 }

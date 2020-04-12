@@ -39,7 +39,7 @@ require_once("Database/DBConnection.php");
     <?php include("views/PartialViews/SideMenu.php"); ?>
     <div class="main-panel">
         <?php include("views/PartialViews/Navbar.php"); ?>
-        <h5>front controller routing</h5>
+        <h5>Change this header! - Front controller</h5>
         <?php
         /*
         function StartsWith($string, $startString)
@@ -66,19 +66,31 @@ require_once("Database/DBConnection.php");
                 break;
             case '/projects/WhatTheDuck/Admin/Product.php':
                 $controller = new ProductController();
-                $controller->Index();
+                if (!empty($action)) {
+                    $controller = $controller->{$action}();
+                } else
+                    $controller->Index();
                 break;
             case '/projects/WhatTheDuck/Admin/Order.php':
                 $controller = new OrderController();
-                $controller->Index();
+                if (!empty($action)) {
+                    $controller = $controller->{$action}();
+                } else
+                    $controller->Index();
                 break;
             case '/projects/WhatTheDuck/Admin/News.php':
                 $controller = new NewsController();
-                $controller->Index();
+                if (!empty($action)) {
+                    $controller = $controller->{$action}();
+                } else
+                    $controller->Index();
                 break;
             case '/projects/WhatTheDuck/Admin/Special.php':
                 $controller = new SpecialController();
-                $controller->Index();
+                if (!empty($action)) {
+                    $controller = $controller->{$action}();
+                } else
+                    $controller->Index();
                 break;
         } ?>
         <?php include("views/PartialViews/Footer.php"); ?>

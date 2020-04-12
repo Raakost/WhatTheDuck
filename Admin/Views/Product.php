@@ -6,13 +6,15 @@
                     <h5 class="card-title">New Product</h5>
                 </div>
                 <div class="card-body">
-                    <form action="">
+                    <form method="post">
+                        <input type="hidden" name="action" value="CreateProduct">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-9">
                                         <label for="productName">Name</label>
-                                        <input id="productName" type="text" class="form-control">
+                                        <input id="productName" type="text" class="form-control"
+                                               value="<?php echo $product["Name"]; ?>">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -80,23 +82,15 @@
                                 </thead>
                                 <tbody>
                                 <form action="">
+                                    <?php foreach ($products as $row) {
+                                        echo '
                                     <tr>
-                                        <td style="padding: 10px;">1000</td>
-                                        <td style="padding: 10px;">Trump Duck</td>
-                                        <td style="padding: 10px; max-width: 200px;">
-                                            Make America great again with this awesome Trump
-                                            duck! Make America great again with this awesome
-                                            Trump duck! Make America great again with this awesome Trump
-                                            duck! Make America great again with this awesome
-                                            Trump duck!
-                                        </td>
-                                        <td style="padding:10px;">39 dkk</td>
-                                        <td style="padding:10px;">
-                                            America, Worldleader
-                                        </td>
-                                        <td style="padding:10px;">
-                                            trump.jpeg
-                                        </td>
+                                        <td style="padding: 10px;">' . $row["ID"] . '</td>
+                                        <td style="padding: 10px;">' . $row["Name"] . '</td>
+                                        <td style="padding: 10px; max-width: 200px;">' . $row["Description"] . '</td>
+                                        <td style="padding:10px;">' . $row["Price"] . '</td>
+                                        <td style="padding:10px;">' . $row["Category_name"] . '</td>
+                                        <td style="padding:10px;">' . $row["Image"] . '</td>
                                         <td class="text-right"
                                             style="padding:10px; width: 130px; min-width: 130px;">
                                             <a href=""
@@ -104,32 +98,8 @@
                                             <a href=""
                                                style="color:red; text-decoration: underline; padding: 5px 5px 5px 5px;">Delete</a>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding: 10px;">1000</td>
-                                        <td style="padding: 10px;">Trump Duck</td>
-                                        <td style="padding: 10px; max-width: 200px;">
-                                            Make America great again with this awesome Trump
-                                            duck! Make America great again with this awesome
-                                            Trump duck! Make America great again with this awesome Trump
-                                            duck! Make America great again with this awesome
-                                            Trump duck!
-                                        </td>
-                                        <td style="padding:10px;">39 dkk</td>
-                                        <td style="padding:10px;">
-                                            America, Worldleader
-                                        </td>
-                                        <td style="padding:10px;">
-                                            trump.jpeg
-                                        </td>
-                                        <td class="text-right"
-                                            style="padding:10px; width: 130px; min-width: 130px;">
-                                            <a href=""
-                                               style="color: darkorange; text-decoration: underline; padding: 10px">Edit</a>
-                                            <a href=""
-                                               style="color:red; text-decoration: underline; padding: 5px 5px 5px 5px;">Delete</a>
-                                        </td>
-                                    </tr>
+                                    </tr>';
+                                    } ?>
                                 </form>
                                 </tbody>
                             </table>

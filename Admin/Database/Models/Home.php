@@ -31,7 +31,8 @@ class Home
     {
         $stmt = $this->db->GetConnection()->query(
             "SELECT DATE_FORMAT(BH.Open_at, '%H:%i') Open_at,
-                        DATE_FORMAT(BH.Close_at, '%H:%i') AS Close_at, BH.ID, WD.Weekday 
+                        DATE_FORMAT(BH.Close_at, '%H:%i') 
+                        AS Close_at, BH.ID, WD.Weekday 
                         FROM Business_hours BH INNER JOIN Weekdays WD ON BH.Weekday_ID = WD.ID
                         WHERE Company_info_ID = 1;");
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -48,7 +49,7 @@ class Home
             $stmt = $this->db->GetConnection()->prepare(
                 "UPDATE Company_info 
                             SET Email = :Email, Phone = :Phone, Description = :Description
-                            WHERE ID=1;");
+                            WHERE ID = 1;");
             $stmt->bindParam(":Email", $email);
             $stmt->bindParam(":Phone", $phone);
             $stmt->bindParam(":Description", $description);
@@ -86,7 +87,7 @@ class Home
                 $zipId = $this->db->GetConnection()->lastInsertId();
             } else {
                 $stmt = $this->db->GetConnection()->prepare(
-                    "UPDATE Zipcodes SET City = :City WHERE ID=:zipId ");
+                    "UPDATE Zipcodes SET City = :City WHERE ID = :zipId ");
                 $stmt->bindParam(":zipId", $zipId);
                 $stmt->bindParam(":City", $city);
                 $stmt->execute();
@@ -94,8 +95,8 @@ class Home
 
             $stmt = $this->db->GetConnection()->prepare(
                 "UPDATE Addresses 
-                            SET Street = :Street, Country = :Country, Zipcode_ID= :Zipcode_ID
-                            WHERE ID=:Address_ID;");
+                            SET Street = :Street, Country = :Country, Zipcode_ID = :Zipcode_ID
+                            WHERE I D= :Address_ID;");
             $stmt->bindParam(":Street", $street);
             $stmt->bindParam(":Country", $country);
             $stmt->bindParam(":Address_ID", $addressID);
@@ -106,6 +107,11 @@ class Home
         }
     }
 
+    /**
+     * @param $ID
+     * @param $openAt
+     * @param $closeAt
+     */
     public function UpdateBusinessHours($ID, $openAt, $closeAt)
     {
         echo $ID . $openAt . $closeAt;

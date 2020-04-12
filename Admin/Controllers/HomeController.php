@@ -9,6 +9,9 @@ class HomeController
         $this->model = new Home();
     }
 
+    /**
+     * Store data from model, include file to render home page.
+     */
     public function Index()
     {
         $companyInfo = $this->model->GetCompanyInfo();
@@ -16,11 +19,14 @@ class HomeController
         include(__DIR__ . "./../Views/Home.php");
     }
 
-    public function Save()
+    /**
+     * Update company info.
+     */
+    public function UpdateInfo()
     {
         echo var_dump($_POST);
-        if (isset($_POST['phone']) && isset($_POST['email']) && isset($_POST['description']) && isset($_POST['country']) &&
-            isset($_POST['street']) && isset($_POST['zipcode']) && isset($_POST['city']) && isset($_POST['addressID'])) {
+        if (isset($_POST['phone']) && ($_POST['email']) && ($_POST['description']) && ($_POST['country'])
+            && ($_POST['street']) && ($_POST['zipcode']) && ($_POST['city']) && ($_POST['addressID'])) {
             $email = $_POST['email'];
             $phone = $_POST['phone'];
             $description = $_POST['description'];
@@ -48,7 +54,5 @@ class HomeController
 
         }
         $this->Index();
-
-
     }
 }

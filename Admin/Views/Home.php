@@ -3,7 +3,7 @@
         <div class="col-md-10">
             <div class="card no-border-radius">
                 <form method="post">
-                    <input type="hidden" name="action" value="Save">
+                    <input type="hidden" name="action" value="UpdateInfo">
                     <div class="row col-md-12">
                         <div class="col-md-7">
                             <div class="card-header" style="padding-left:0;">
