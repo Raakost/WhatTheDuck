@@ -40,10 +40,29 @@ require_once("Database/DBConnection.php");
     <div class="main-panel">
         <?php include("views/PartialViews/Navbar.php"); ?>
         <h5>front controller routing</h5>
-        <?php switch ($_SERVER['REQUEST_URI']) {
+        <?php
+        /*
+        function StartsWith($string, $startString)
+        {
+            $length = strlen($startString);
+            return (substr($string, 0, $length) === $startString);
+        }
+        */
+        $action = "";
+        if (isset($_GET['action']) && !empty($_GET['action'])) {
+            $action = $_GET['action'];
+        }
+        if (isset($_POST['action']) && !empty($_POST['action'])) {
+            $action = $_POST['action'];
+        }
+
+        switch (preg_split("/\?/", $_SERVER['REQUEST_URI']) [0]) {
             case '/projects/WhatTheDuck/Admin/Home.php':
                 $controller = new HomeController();
-                $controller->Index();
+                if (!empty($action)) {
+                    $controller = $controller->{$action}();
+                } else
+                    $controller->Index();
                 break;
             case '/projects/WhatTheDuck/Admin/Product.php':
                 $controller = new ProductController();

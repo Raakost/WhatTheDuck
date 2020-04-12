@@ -1,28 +1,30 @@
 <?php
 
-//require(__DIR__ . "./../Database/Constants.php");
-
 class DBConnection
 {
-    static private $pdo;
+    private $pdo;
+    static private $instance;
 
     public function __construct()
     {
-        if (!self::$pdo) {
-            try {
-                self::$pdo = new PDO(DSN, DB_USER, DB_PASS);
-            } catch (PDOException $exception) {
-                echo "db problem: " . $exception->getMessage();
-            }
+        try {
+            $this->pdo = new PDO(DSN, DB_USER, DB_PASS);
+            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $exception) {
+            echo "Exception message - Database connection: " . $exception->getMessage();
         }
-        return self::$pdo;
     }
 
-    public function exec($statement){
-        return self::$pdo->exec($statement);
+    public static function GetInstance()
+    {
+        if (!self::$instance) {
+            self::$instance = new DBConnection();
+        }
+        return self::$instance;
     }
 
-    public function query($statement){
-        return self::$pdo->query($statement);
+    public function GetConnection()
+    {
+        return $this->pdo;
     }
 }
