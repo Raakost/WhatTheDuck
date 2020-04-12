@@ -49,7 +49,6 @@
                             <?php
                             $count = 0;
                             foreach ($businessHours as $row) {
-                              //  echo var_dump($row) ;
                                 echo '<div class="row">
                                 <div class="col-md-6">
                              <input type="hidden" name="businessHours[' . $count . '][ID]" value=' . $row["ID"] . '>

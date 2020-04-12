@@ -5,7 +5,7 @@ class Home
     private $db;
 
     /**
-     * Home constructor. Initialize database connection.
+     * Home constructor.
      */
     public function __construct()
     {
@@ -65,9 +65,6 @@ class Home
      * @param $zipcode
      * @param $city
      * @param $addressID
-     * Update all properties on address.
-     * First check if zipcode already exists,if it does, Update city.
-     * If not, create new zipcode/city
      */
     public function UpdateAddress($country, $street, $zipcode, $city, $addressID)
     {
@@ -96,7 +93,7 @@ class Home
             $stmt = $this->db->GetConnection()->prepare(
                 "UPDATE Addresses 
                             SET Street = :Street, Country = :Country, Zipcode_ID = :Zipcode_ID
-                            WHERE I D= :Address_ID;");
+                            WHERE ID = :Address_ID;");
             $stmt->bindParam(":Street", $street);
             $stmt->bindParam(":Country", $country);
             $stmt->bindParam(":Address_ID", $addressID);

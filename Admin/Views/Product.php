@@ -14,24 +14,23 @@
                                     <div class="col-md-9">
                                         <label for="productName">Name</label>
                                         <input id="productName" type="text" class="form-control"
-                                               value="<?php echo $product["Name"]; ?>">
+                                               name="name">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <label for="productPrice">Price</label>
-                                        <input id="productPrice" type="text" class="form-control">
+                                        <input id="productPrice" name="price" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <label style="margin-top: 4px;">Category</label>
-                                        <select class="select form-control" multiple>
-                                            <option>Superhero</option>
-                                            <option>World leader</option>
-                                            <option>Red</option>
-                                            <option>Yellow</option>
-                                            <option>Blue</option>
+                                        <select name="categories[]" class="select form-control" multiple>
+                                            <?php foreach ($categories as $row) {
+                                                echo '<option value=' . $row["ID"] . '>' . $row["Category_name"] . '</option>';
+                                            }
+                                            ?>
                                         </select>
                                     </div>
                                 </div>
@@ -39,7 +38,7 @@
                                     <div class="col-md-9">
                                         <label>Image</label>
                                         <div class="custom-file">
-                                            <input type="file" name="file">
+                                            <input type="file" name="image">
                                             <label for="file"></label>
                                         </div>
                                     </div>
@@ -47,7 +46,8 @@
                                 <div class="row">
                                     <div class="col-md-9">
                                         <label for="productDescription">Description</label>
-                                        <textarea id="productDescription" class="form-control textarea"
+                                        <textarea id="productDescription" name="description"
+                                                  class="form-control textarea"
                                                   style="padding: 10px 10px 10px 10px; min-height: 200px;"></textarea>
                                     </div>
                                 </div>

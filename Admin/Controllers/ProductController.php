@@ -10,20 +10,28 @@ Class ProductController
     }
 
     /**
-     * Store data from model, include file to render product page.
+     * Get data to populate products table and categories select.
+     * Include view to render page.
      */
     public function Index()
     {
         $products = $this->model->GetAllProducts();
-        $product = $this->model->GetProduct();
+        $categories = $this->model->GetAllCategories();
         include(__DIR__ . "./../Views/Product.php");
     }
 
     public function CreateProduct()
     {
-        if (isset($_POST['name']) && ($_POST['price']) && ($_POST['Category'])
-            && ($_POST['image']) && ($_POST['description'])) {
+        echo var_dump($_POST);
+        if (isset($_POST['name']) && ($_POST['price']) && ($_POST['description']) && ($_POST['categories'])) {
+            $name = $_POST['name'];
+            $price = $_POST['price'];
+            $description = $_POST['description'];
+            $categories = $_POST['categories'];
+            $image = "";
 
+            $prodId = $this->model->CreateProduct($name, $description, $price, $image);
+            $this->model->UpdateProductCategories($prodId, $categories);
         }
     }
 

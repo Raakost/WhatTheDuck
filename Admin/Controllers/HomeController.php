@@ -10,7 +10,8 @@ class HomeController
     }
 
     /**
-     * Store data from model, include file to render home page.
+     * Get data from db model.
+     * Include view to render home page.
      */
     public function Index()
     {
@@ -20,7 +21,7 @@ class HomeController
     }
 
     /**
-     * Update company info.
+     *
      */
     public function UpdateInfo()
     {
