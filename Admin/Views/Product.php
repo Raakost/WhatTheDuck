@@ -82,15 +82,19 @@
                                 </thead>
                                 <tbody>
                                 <form action="">
-                                    <?php foreach ($products as $row) {
+                                    <?php foreach ($tableProd as $row) {
+                                        $categoryString = "";
+                                        foreach ($row->categories as $category) {
+                                            $categoryString = $categoryString . " " . $category->catName;
+                                        }
                                         echo '
                                     <tr>
-                                        <td style="padding: 10px;">' . $row["ID"] . '</td>
-                                        <td style="padding: 10px;">' . $row["Name"] . '</td>
-                                        <td style="padding: 10px; max-width: 200px;">' . $row["Description"] . '</td>
-                                        <td style="padding:10px;">' . $row["Price"] . '</td>
-                                        <td style="padding:10px;">' . $row["Category_name"] . '</td>
-                                        <td style="padding:10px;">' . $row["Image"] . '</td>
+                                        <td style="padding: 10px;">' . $row->id . '</td>
+                                        <td style="padding: 10px;">' . $row->name . '</td>
+                                        <td style="padding: 10px; max-width: 200px;">' . $row->description . '</td>
+                                        <td style="padding:10px;">' . $row->price . '</td>
+                                        <td style="padding:10px;">' . $categoryString . '</td>
+                                        <td style="padding:10px;">' . $row->image . '</td>
                                         <td class="text-right"
                                             style="padding:10px; width: 130px; min-width: 130px;">
                                             <a href=""

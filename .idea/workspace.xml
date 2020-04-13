@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Admin/Interfaces/IModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/Product.php" afterDir="false" />
@@ -59,7 +60,7 @@
       <workItem from="1585206792455" duration="13507000" />
       <workItem from="1585557883239" duration="1361000" />
       <workItem from="1586508120107" duration="41712000" />
-      <workItem from="1586689409907" duration="22201000" />
+      <workItem from="1586689409907" duration="30739000" />
     </task>
     <servers />
   </component>
@@ -75,6 +76,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#SQL_Dialects/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586615100459" />
+    <state x="726" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586769071733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="726" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586769071733" />
     <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585217620031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -91,10 +96,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1183" y="339" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585128463548" />
-    <state x="2714" y="444" key="NewPhpFileDialog" timestamp="1585222610416">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1586769077650">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585216785974" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586769077650" />
     <state x="2714" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585222610416" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1586720666224">
       <screen x="0" y="0" width="1920" height="1040" />

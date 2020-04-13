@@ -13,6 +13,7 @@ class Product
     }
 
     /**
+     * Get a product.
      * @param $id
      * @return mixed
      */
@@ -29,12 +30,13 @@ class Product
     }
 
     /**
+     * Get all products.
      * @return array
      */
     public function GetAllProducts()
     {
         $stmt = $this->db->GetConnection()->prepare(
-            "SELECT P.ID, P.Name, P.Description, P.Price, P.Image, C.Category_name FROM Products P 
+            "SELECT P.ID, P.Name, P.Description, P.Price, P.Image, C.Category_name, C.ID CID FROM Products P 
                         LEFT JOIN Product_categories PC ON P.ID = PC.Product_ID
                         LEFT JOIN Categories C ON C.ID = PC.Category_ID;
                         ");
@@ -94,6 +96,9 @@ class Product
 
     }
 
+    /**
+     * @return array
+     */
     public function GetAllCategories()
     {
         try {
@@ -105,4 +110,9 @@ class Product
             echo "Exception message - Product model: " . $exception->getMessage();
         }
     }
+
+    public function DeleteProduct(){
+
+    }
+
 }
