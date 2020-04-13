@@ -6,7 +6,7 @@
                     <h5 class="card-title">New Product</h5>
                 </div>
                 <div class="card-body">
-                    <form method="post">
+                    <form method="post" enctype="multipart/form-data">
                         <input type="hidden" name="action" value="CreateProduct">
                         <div class="row">
                             <div class="col-md-12">
@@ -38,7 +38,7 @@
                                     <div class="col-md-9">
                                         <label>Image</label>
                                         <div class="custom-file">
-                                            <input type="file" name="image">
+                                            <input type="file" name="file">
                                             <label for="file"></label>
                                         </div>
                                     </div>
