@@ -99,8 +99,7 @@
                                             style="padding:10px; width: 130px; min-width: 130px;">
                                             <a href=""
                                                style="color: darkorange; text-decoration: underline; padding: 10px">Edit</a>
-                                            <a href=""
-                                               style="color:red; text-decoration: underline; padding: 5px 5px 5px 5px;">Delete</a>
+                                            <a href="?action=DeleteProduct&id=' . $row->id . '" style="color:red; text-decoration: underline; padding: 5px 5px 5px 5px;" onClick="return confirm(\'Delete This product?\')">Delete</a>
                                         </td>
                                     </tr>';
                                     } ?>

@@ -111,8 +111,24 @@ class Product
         }
     }
 
-    public function DeleteProduct(){
+    /**
+     * @param $id
+     */
+    public function DeleteProduct($id)
+    {
+        try {
+            $stmtDeleteCategories = $this->db->GetConnection()->prepare(
+                "Delete FROM Product_categories WHERE Product_Id=:Id;");
+            $stmtDeleteCategories->bindParam(":Id", $id);
+            $stmtDeleteCategories->execute();
 
+            $stmt = $this->db->GetConnection()->prepare(
+                "DELETE FROM Products WHERE ID=:Id;");
+            $stmt->bindParam(":Id", $id);
+            $stmt->execute();
+        } catch (PDOException $exception) {
+            echo "Exception message - Product model: " . $exception->getMessage();
+        }
     }
 
 }

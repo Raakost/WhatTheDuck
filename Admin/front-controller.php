@@ -41,13 +41,6 @@ require_once("Database/DBConnection.php");
         <?php include("views/PartialViews/Navbar.php"); ?>
         <h5>Change this header! - Front controller</h5>
         <?php
-        /*
-        function StartsWith($string, $startString)
-        {
-            $length = strlen($startString);
-            return (substr($string, 0, $length) === $startString);
-        }
-        */
         $action = "";
         if (isset($_GET['action']) && !empty($_GET['action'])) {
             $action = $_GET['action'];

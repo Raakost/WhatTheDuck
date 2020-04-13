@@ -65,7 +65,10 @@ Class ProductController
             $image = $this->UploadImage();
             $prodId = $this->model->CreateProduct($name, $description, $price, $image);
             $this->model->UpdateProductCategories($prodId, $categories);
+        } else {
+            echo "couldn't create product!";
         }
+        $this->Index();
     }
 
     /**
@@ -74,7 +77,6 @@ Class ProductController
      */
     public function UploadImage()
     {
-        var_dump($_FILES);
         if ((($_FILES["file"]["type"] == "image/jpeg")
                 || ($_FILES["file"]["type"] == "image/gif")
                 || ($_FILES["file"]["type"] == "image/png")
@@ -84,18 +86,14 @@ Class ProductController
             if ($_FILES["file"]["error"] > 0) {
                 echo "Error: " . $_FILES["file"]["error"] . "<br>";
             } else {
-                echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-                echo "Type: " . $_FILES["file"]["type"] . "<br>";
-                echo "Size: " . ($_FILES["file"]["size"] / 1024) . "<br>";
-                echo "Temp folder: " . $_FILES["file"]["tmp_name"] . "<br>";
-                echo "Current directory: " . getcwd() . "<br>";
-                if (file_exists("../ProductImages/" . $_FILES["file"]["name"])) {
+                $newFileName = trim(com_create_guid(), '{}') . '.' . preg_split("/\./", $_FILES["file"]["name"])[1];
+
+                if (file_exists("../ProductImages/" . $newFileName)) {
                     echo "already exists";
                 } else {
                     move_uploaded_file($_FILES["file"]["tmp_name"],
-                        "../ProductImages/" . $_FILES["file"]["name"]);
-                    echo "stored in ProductImages: " . $_FILES["file"]["name"];
-                    return $_FILES["file"]["name"];
+                        "../ProductImages/" . $newFileName);
+                    return $newFileName;
                 }
             }
         } else {
@@ -109,6 +107,13 @@ Class ProductController
     public function UpdateProduct()
     {
 
+
+       /* if (isset($_GET['id'])) {
+            $this->model->UpdateProduct($_GET['id']);
+        } else {
+            echo "No id, couldn't update!";
+        }
+        $this->Index();*/
     }
 
     /**
@@ -116,7 +121,12 @@ Class ProductController
      */
     public function DeleteProduct()
     {
-
+        if (isset($_GET['id'])) {
+            $this->model->DeleteProduct($_GET['id']);
+        } else {
+            echo "No id, couldn't delete!";
+        }
+        $this->Index();
     }
 
 
