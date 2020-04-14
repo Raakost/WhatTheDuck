@@ -1,274 +1,212 @@
 <?php ?>
-
 <!DOCTYPE html>
 <html>
-<title>Duck Shop Public</title>
-<meta charset="utf-8"/>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="../assets/css/w3shopcss.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica Neue">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <style>
-    body, h1, h2, h3, h4, h5, h6 {
-        font-family: "Lato", sans-serif;
+    .w3-sidebar a {
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     }
 
-    body, html {
-        height: 100%;
-        color: #777;
-        line-height: 1.8;
-    }
-
-    /* Create a Parallax Effect */
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    /* First image (Logo. Full height) */
-    .bgimg-1 {
-        background-image: url('../assets/img/ducksonrow.jpeg');
-        min-height: 100%;
-    }
-
-    /* Second image (Portfolio) */
-    .bgimg-2 {
-        background-image: url('../assets/img/ducksonrow.jpeg');
-        min-height: 400px;
-    }
-
-    /* Third image (Contact) */
-    .bgimg-3 {
-        background-image: url('../assets/img/ducksonrow.jpeg');
-        min-height: 400px;
-    }
-
-    .w3-wide {
-        letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-        cursor: pointer;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1600px) {
-        .bgimg-1, .bgimg-2, .bgimg-3 {
-            background-attachment: scroll;
-            min-height: 400px;
-        }
+    h1, h2, h3, h4, h5, h6, .w3-wide {
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     }
 </style>
-<body>
+<body class="w3-content" style="max-width:1200px">
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
-        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
-           onclick="toggleFunction()" title="Toggle Navigation Menu">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a href="#home" class="w3-bar-item w3-button" style="color:white;">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small" style="color:white;"><i class="fa fa-th"></i> PRODUCTS</a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small" style="color:white;"><i class="	fa fa-paper-plane"></i> NEWS</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small" style="color:white;"><i class="fa fa-envelope"></i> CONTACT</a>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px;" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+        <img style="width: 80px;" src="../assets/img/logo.png" class="center-image" alt="">
+        <h3 class="w3-wide">WHAT THE DUCK?!</h3>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+        <a href="#" class="w3-bar-item w3-button">Duck Shop</a>
+        <a href="#" class="w3-bar-item w3-button">News</a>
+        <a href="#" class="w3-bar-item w3-button">Daily Special</a>
+    </div>
+    <div class="w3-large w3-text-grey" style="font-weight:bold">
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart w3-margin-right"></i>Shopping Cart</a>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+        <a href="#footer" class="w3-bar-item w3-button w3-padding">About</a>
     </div>
 
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">PRODUCTS</a>
-        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">NEWS</a>
-        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    </div>
-</div>
+</nav>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-left" style="white-space:nowrap;">
-        <!-- <span class="w3-center w3-wide w3-animate-opacity" style="display: block; padding: 25px; opacity:70%;"><img
-                     style="border-radius: 400px; width: 200px;" src="../assets/img/logo-white.png" alt=""></span> -->
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"
-              style="font-size: 40px!important;">WHAT THE DUCK?!</span>
-        <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"><p>The Shop... </p></span>
-    </div>
-</div>
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <div class="w3-bar-item w3-padding-24 w3-wide">WHAT THE DUCK?!</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
+                class="fa fa-bars"></i></a>
+</header>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-    <h3 class="w3-center">ABOUT ME</h3>
-    <p class="w3-center"><em>I love photography</em></p>
-    <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-        non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.</p>
-</div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+     id="myOverlay"></div>
 
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-    <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-    </div>
-</div>
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-    <h3 class="w3-center">MY WORK</h3>
-    <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them
-            bigger</em></p><br>
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+        <p class="w3-right">
+            
+        </p>
+    </header>
 
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
-            <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="The mist over the mountains">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="Coffee beans">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="Bear closeup">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="Quiet ocean">
+    <!-- Image header -->
+    <div class="w3-display-container w3-container">
+        <img src="../assets/img/ducksonrow.jpeg" style="width:100%; opacity: 80%;">
+        <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+            <h1 class="w3-hide-small">DAILY SPECIAL OFFER</h1>
+            <h1 class="w3-hide-large w3-hide-medium">DAILY SPECIAL OFFER</h1>
+            <h1 class="w3-large w3-hide-small">Check it out... </h1>
+            <p><a href="" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
         </div>
     </div>
-
-    <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m3">
-            <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="The mist">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="My beloved typewriter">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="Empty ghost train">
-        </div>
-
-        <div class="w3-col m3">
-            <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                 alt="Sailing">
-        </div>
-        <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+    <div class="w3-container w3-text-grey" id="news-section">
+        <h2>News</h2>
     </div>
-</div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption" class="w3-opacity w3-large"></p>
-    </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-    <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-    </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-    <h3 class="w3-center">WHERE I WORK</h3>
-    <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-    <div class="w3-row w3-padding-32 w3-section">
-        <div class="w3-col m4 w3-container">
-            <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-        </div>
-        <div class="w3-col m8 w3-panel">
-            <div class="w3-large w3-margin-bottom">
-                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                mail@mail.com<br>
-            </div>
-            <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-            <form action="/action_page.php" target="_blank">
-                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                    <div class="w3-half">
-                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+    <!-- Product grid -->
+    <div class="w3-row w3-grayscale">
+        <div class="w3-col s4">
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="../assets/img/abe.jpeg" style="width:100%">
+                    <div class="w3-display-middle w3-display-hover">
+                        <button class="w3-button w3-black">Go to</button>
                     </div>
-                    <div class="w3-half">
-                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                    </div>
+                    <p>News title<br><b>News description</b></p>
                 </div>
-                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                <button class="w3-button w3-black w3-right w3-section" type="submit">
-                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
-            </form>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="../assets/img/abe.jpeg" style="width:100%">
+                    <div class="w3-display-middle w3-display-hover">
+                        <button class="w3-button w3-black">Go to</button>
+                    </div>
+                    <p>News title<br><b>News description</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col s4">
+            <div class="w3-container">
+                <div class="w3-display-container">
+                    <img src="../assets/img/abe.jpeg" style="width:100%">
+                    <div class="w3-display-middle w3-display-hover">
+                        <button class="w3-button w3-black">Go to</button>
+                    </div>
+                    <p>News title<br><b>News description</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe section -->
+    <div class="w3-container w3-black w3-padding-32">
+        <h1>Subscribe</h1>
+        <p>To get special offers and VIP treatment:</p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+        <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+        <div class="w3-row-padding">
+            <div class="w3-col s4">
+                <h4>Contact</h4>
+                <p>Questions? Go ahead.</p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+                    <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+                    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+                </form>
+            </div>
+
+
+            <div class="w3-col s4">
+                <h4>Store</h4>
+                <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+                <p><i class="fa fa-fw fa-map-marker"></i> streetname no</p>
+                <p><i class="fa fa-fw fa-map-marker"></i> zip/city</p>
+                <p><i class="fa fa-fw fa-map-marker"></i> company</p>
+                <p><i class="fa fa-fw fa-phone"></i> phone</p>
+                <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+            </div>
+            <div class="w3-col s4 w3-justify">
+                <h4>About</h4>
+                <p>Company info description here</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">
+        <h1>opening hours here</h1>
+    </div>
+
+    <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+        <div class="w3-container w3-white w3-center">
+            <i onclick="document.getElementById('newsletter').style.display='none'"
+               class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+            <h2 class="w3-wide">NEWSLETTER</h2>
+            <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+            <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
+                    onclick="document.getElementById('newsletter').style.display='none'">Subscribe
+            </button>
         </div>
     </div>
 </div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-</footer>
 
 <script>
-    // Modal Image Gallery
-    function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-    }
-
-    // Change style of navbar on scroll
-    window.onscroll = function () {
-        myFunction()
-    };
-
-    function myFunction() {
-        var navbar = document.getElementById("myNavbar");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-        } else {
-            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-        }
-    }
-
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function toggleFunction() {
-        var x = document.getElementById("navDemo");
+    // Accordion
+    function myAccFunc() {
+        var x = document.getElementById("demoAcc");
         if (x.className.indexOf("w3-show") == -1) {
             x.className += " w3-show";
         } else {
             x.className = x.className.replace(" w3-show", "");
         }
     }
+
+    // Click on the "Jeans" link on page load to open the accordion for demo purposes
+    document.getElementById("myBtn").click();
+
+
+    // Open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
 </script>
 
 </body>
 </html>
+

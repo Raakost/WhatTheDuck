@@ -2,89 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProductImages/96383A18-766D-49AB-81C7-235BFEEB256C.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/97724360-0850-4268-86DD-25F74B64E1C3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/A03CC600-08A0-4A14-B8DF-2210FE9572BF.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/sam.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/unicorn.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/{112F63D5-1880-40E3-8104-14E9410ECD8A}" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/{C24B56ED-0A05-405B-8B4A-6EEC6938AE4D}" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Controllers/CartController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Controllers/NewsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Controllers/OrderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Controllers/SpecialController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/Home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/fonts/nucleo-icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/fonts/nucleo-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/fonts/nucleo-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/fonts/nucleo-icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/apple-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/ducksonrow.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/hugeduck.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/logo-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/js/core/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/js/core/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/js/core/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/js/plugins/bootstrap-notify.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/js/plugins/chartjs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/js/plugins/perfect-scrollbar.jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_alerts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_animated-buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_checkboxes-radio.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_fixed-plugin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_footers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_inputs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_misc.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_nucleo-outline.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_page-header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_responsive.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_sidebar-and-main-panel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/cards/_card-chart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/cards/_card-map.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/cards/_card-plain.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/cards/_card-stats.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/cards/_card-user.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/mixins/_cards.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/mixins/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/mixins/_inputs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/mixins/_page-header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/mixins/_transparency.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/mixins/_vendor-prefixes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/plugins/_plugin-animate-bootstrap-notify.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard/plugins/_plugin-perfect-scrollbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/css/w3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/img/abe.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/img/bigben.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/img/cowboy.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/img/indian.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/img/liberty.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/img/queen.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/img/sam.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/img/trump.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/assets/img/unicorn.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Interface/IGetSet.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Router/Router.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Views/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/img/trump.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/front-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Views/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +25,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -112,22 +49,24 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shop/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shop/assets/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets\css" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin\Views" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin\Database" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets\img" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Views" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Views\PartialViews" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin\assets\js\demo" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin\assets\js" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -144,7 +83,7 @@
       <workItem from="1585206792455" duration="13507000" />
       <workItem from="1585557883239" duration="1361000" />
       <workItem from="1586508120107" duration="41712000" />
-      <workItem from="1586689409907" duration="42092000" />
+      <workItem from="1586689409907" duration="53325000" />
     </task>
     <servers />
   </component>
@@ -163,10 +102,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#SQL_Dialects/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586615100459" />
-    <state x="726" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586769071733">
+    <state x="726" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586842154745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="726" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586769071733" />
+    <state x="726" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586842154745" />
     <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585217620031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -183,15 +122,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1183" y="339" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585128463548" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1586776475627">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1586846022298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586776475627" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586846022298" />
     <state x="2714" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585222610416" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1586720666224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586720666224" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1586852451369">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586852451369" />
     <state x="656" y="252" width="607" height="536" key="find.popup" timestamp="1586508949983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
