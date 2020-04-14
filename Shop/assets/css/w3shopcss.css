@@ -438,7 +438,7 @@ a {
 .w3-sidebar {
     height: 100%;
     width: 200px;
-    background-color: #fff;
+    background-color: #000;
     position: fixed !important;
     z-index: 1;
     overflow: auto
@@ -1727,4 +1727,25 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.w3-margin-top-big {
+    margin-top: 40px;
+!important;
+}
+
+.display-li-inline {
+    display: inline;
+}
+
+.footer-background {
+    background-color: #e8e7e0;
+}
+
+.w3-light {
+    background-color: #f4f3ef;
+}
+
+.dark-background {
+    background-color: #404040;
 }

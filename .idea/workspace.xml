@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Shop/assets/css/w3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/abe.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/bigben.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/cowboy.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/indian.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/liberty.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/queen.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/sam.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/trump.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/unicorn.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/front-controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Views/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +74,7 @@
       <workItem from="1585206792455" duration="13507000" />
       <workItem from="1585557883239" duration="1361000" />
       <workItem from="1586508120107" duration="41712000" />
-      <workItem from="1586689409907" duration="53325000" />
+      <workItem from="1586689409907" duration="62621000" />
     </task>
     <servers />
   </component>
@@ -139,6 +130,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="252" width="607" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586508949983" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1586862862984">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586862862984" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586516576054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
