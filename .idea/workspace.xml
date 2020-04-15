@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ProductImages/475185A5-64D1-427B-B3F8-B1A405B1FF57.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/Views/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/front-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Views/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" afterDir="false" />
     </list>
@@ -40,24 +47,24 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shop/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shop" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets\img" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Views" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Views\PartialViews" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets\css" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin\Views" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets\img" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Views" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Views\PartialViews" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin\assets\js\demo" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -75,6 +82,7 @@
       <workItem from="1585557883239" duration="1361000" />
       <workItem from="1586508120107" duration="41712000" />
       <workItem from="1586689409907" duration="62621000" />
+      <workItem from="1586975217577" duration="849000" />
     </task>
     <servers />
   </component>
@@ -113,10 +121,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1183" y="339" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585128463548" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1586846022298">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1586938692490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586846022298" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586938692490" />
     <state x="2714" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585222610416" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1586720666224">
       <screen x="0" y="0" width="1920" height="1040" />

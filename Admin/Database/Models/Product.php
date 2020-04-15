@@ -19,14 +19,19 @@ class Product
      */
     public function GetProduct($id)
     {
-        $stmt = $this->db->GetConnection()->prepare(
-            "SELECT * FROM Products P
+        try {
+            $stmt = $this->db->GetConnection()->prepare(
+                "SELECT * FROM Products P
                         LEFT JOIN Product_categories PC ON P.ID = PC.Product_ID
                         LEFT JOIN Categories C ON C.ID = PC.Category_ID;
                         WHERE ID = :ID");
-        $stmt->bindParam(":ID", $id);
-        $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_ASSOC);
+            $stmt->bindParam(":ID", $id);
+            $stmt->execute();
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+        } catch (PDOException $exception) {
+            echo "Exception message - Product model: " . $exception->getMessage();
+        }
+
     }
 
     /**
@@ -35,13 +40,17 @@ class Product
      */
     public function GetAllProducts()
     {
-        $stmt = $this->db->GetConnection()->prepare(
-            "SELECT P.ID, P.Name, P.Description, P.Price, P.Image, C.Category_name, C.ID CID FROM Products P 
+        try {
+            $stmt = $this->db->GetConnection()->prepare(
+                "SELECT P.ID, P.Name, P.Description, P.Price, P.Image, C.Category_name, C.ID CID FROM Products P 
                         LEFT JOIN Product_categories PC ON P.ID = PC.Product_ID
                         LEFT JOIN Categories C ON C.ID = PC.Category_ID;
                         ");
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $exception) {
+            echo "Exception message - Product model: " . $exception->getMessage();
+        }
     }
 
     /**
@@ -64,7 +73,6 @@ class Product
             $stmt->execute();
 
             return $this->db->GetConnection()->lastInsertId();
-
 
         } catch (PDOException $exception) {
             echo "Exception message - Product model: " . $exception->getMessage();
@@ -89,7 +97,6 @@ class Product
                 $stmt->bindParam(":CategoryId", $category);
                 $stmt->execute();
             }
-
         } catch (PDOException $exception) {
             echo "Exception message - Product model: " . $exception->getMessage();
         }

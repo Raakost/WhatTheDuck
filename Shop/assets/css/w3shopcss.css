@@ -1749,3 +1749,27 @@ a {
 .dark-background {
     background-color: #404040;
 }
+
+.btn-group button {
+
+
+    color: white; /* White text */
+
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+!important; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+!important;
+    clear: both;
+!important;
+    display: table;
+!important;
+}
