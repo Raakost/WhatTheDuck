@@ -2,17 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProductImages/475185A5-64D1-427B-B3F8-B1A405B1FF57.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/Controllers/CompanyInfoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/Database/Models/CompanyInfoModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/Database/Models/NewsModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/Database/Models/ProductModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/SpecialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/SpecialController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection/Constants.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/DBConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection/DBConnection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/DBConnectionTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/HomeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/NewsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/OrderModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/ProductModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Special.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/SpecialModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Interfaces/IModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/js/paper-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/js/paper-dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/js/paper-dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/js/paper-dashboard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/assets/scss/paper-dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/scss/paper-dashboard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/front-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Views/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Views/PartialViews/Footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Views/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,24 +74,24 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shop/Database" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Database" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets\img" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Views" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Views\PartialViews" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\DBConnection" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets\css" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin\Views" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -82,7 +109,8 @@
       <workItem from="1585557883239" duration="1361000" />
       <workItem from="1586508120107" duration="41712000" />
       <workItem from="1586689409907" duration="62621000" />
-      <workItem from="1586975217577" duration="849000" />
+      <workItem from="1586975217577" duration="2537000" />
+      <workItem from="1586977996036" duration="20519000" />
     </task>
     <servers />
   </component>
@@ -105,14 +133,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="726" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586842154745" />
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585217620031">
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586979587800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585217620031" />
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585223581361">
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586979587800" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587188919948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585223581361" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587188919948" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1586722561409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -121,10 +149,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1183" y="339" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585128463548" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1586938692490">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1587039905804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586938692490" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587039905804" />
     <state x="2714" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585222610416" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1586720666224">
       <screen x="0" y="0" width="1920" height="1040" />

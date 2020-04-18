@@ -1,100 +1,96 @@
 <?php
 // Models
-require_once("Database/Models/Home.php");
-require_once("Database/Models/Product.php");
-require_once("Database/Models/Order.php");
-require_once("Database/Models/News.php");
-require_once("Database/Models/Special.php");
+require_once("Database/Models/NewsModel.php");
+require_once("Database/Models/ProductModel.php");
+require_once("Database/Models/CompanyInfoModel.php");
+require_once("Database/Models/BusinessHoursModel.php");
 // Controllers
 require_once("Controllers/HomeController.php");
 require_once("Controllers/ProductController.php");
-require_once("Controllers/OrderController.php");
-require_once("Controllers/NewsController.php");
-require_once("Controllers/SpecialController.php");
+require_once("Controllers/CompanyInfoController.php");
+
 // Database
-require_once("Database/Constants.php");
-require_once("Database/DBConnection.php");
+require_once("../DBConnection/Constants.php");
+require_once("../DBConnection/DBConnection.php");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <title>Duck Shop</title>
+    <meta charset="UTF-8">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>Duck Administrator</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
-          name='viewport'/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet"/>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet"/>
-    <script src="assets/js/core/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/w3shopcss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica Neue">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="">
-<div class="wrapper ">
-    <?php include("views/PartialViews/SideMenu.php"); ?>
-    <div class="main-panel">
-        <?php include("views/PartialViews/Navbar.php"); ?>
-        <h5>Change this header! - Front controller</h5>
-        <?php
-        $action = "";
-        if (isset($_GET['action']) && !empty($_GET['action'])) {
-            $action = $_GET['action'];
-        }
-        if (isset($_POST['action']) && !empty($_POST['action'])) {
-            $action = $_POST['action'];
-        }
 
-        switch (preg_split("/\?/", $_SERVER['REQUEST_URI']) [0]) {
-            case '/projects/WhatTheDuck/Admin/Home.php':
-                $controller = new HomeController();
-                if (!empty($action)) {
-                    $controller = $controller->{$action}();
-                } else
-                    $controller->Index();
-                break;
-            case '/projects/WhatTheDuck/Admin/Product.php':
-                $controller = new ProductController();
-                if (!empty($action)) {
-                    $controller = $controller->{$action}();
-                } else
-                    $controller->Index();
-                break;
-            case '/projects/WhatTheDuck/Admin/Order.php':
-                $controller = new OrderController();
-                if (!empty($action)) {
-                    $controller = $controller->{$action}();
-                } else
-                    $controller->Index();
-                break;
-            case '/projects/WhatTheDuck/Admin/News.php':
-                $controller = new NewsController();
-                if (!empty($action)) {
-                    $controller = $controller->{$action}();
-                } else
-                    $controller->Index();
-                break;
-            case '/projects/WhatTheDuck/Admin/Special.php':
-                $controller = new SpecialController();
-                if (!empty($action)) {
-                    $controller = $controller->{$action}();
-                } else
-                    $controller->Index();
-                break;
-        } ?>
-        <?php include("views/PartialViews/Footer.php"); ?>
-    </div>
+<style>
+    .w3-sidebar a {
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6, .w3-wide {
+        font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f4f3ef;
+    }
+
+</style>
+
+<body class="w3-content" style="max-width:1200px">
+<?php include("views/PartialViews/Menu.php"); ?>
+<div class="w3-main" style="margin-left:250px">
+    <?php
+    $action = "";
+    if (isset($_GET['action']) && !empty($_GET['action'])) {
+        $action = $_GET['action'];
+    }
+    if (isset($_POST['action']) && !empty($_POST['action'])) {
+        $action = $_POST['action'];
+    }
+
+    switch (preg_split("/\?/", $_SERVER['REQUEST_URI']) [0]) {
+        case '/projects/WhatTheDuck/Shop/Home.php':
+            $controller = new HomeController();
+            if (!empty($action)) {
+                $controller = $controller->{$action}();
+            } else
+                $controller->Index();
+            break;
+        case '/projects/WhatTheDuck/Shop/Product.php':
+            $controller = new ProductController();
+            if (!empty($action)) {
+                $controller = $controller->{$action}();
+            } else
+                $controller->Index();
+            break;
+    } ?>
+    <?php
+    $controller = new CompanyInfoController();
+    $controller->Index(); ?>
+
 </div>
-<script src="assets/js/core/popper.min.js"></script>
-<script src="assets/js/core/bootstrap.min.js"></script>
-<script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-<script src="assets/js/plugins/bootstrap-notify.js"></script>
-<script src="assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
+
+
+<script>
+    // Open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+
 </body>
 </html>

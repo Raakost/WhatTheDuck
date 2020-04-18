@@ -1,10 +1,10 @@
 <?php
 // Models
-require_once("Database/Models/Home.php");
-require_once("Database/Models/Product.php");
-require_once("Database/Models/Order.php");
-require_once("Database/Models/News.php");
-require_once("Database/Models/Special.php");
+require_once("Database/Models/HomeModel.php");
+require_once("Database/Models/ProductModel.php");
+require_once("Database/Models/OrderModel.php");
+require_once("Database/Models/NewsModel.php");
+require_once("Database/Models/SpecialModel.php");
 // Controllers
 require_once("Controllers/HomeController.php");
 require_once("Controllers/ProductController.php");
@@ -12,8 +12,8 @@ require_once("Controllers/OrderController.php");
 require_once("Controllers/NewsController.php");
 require_once("Controllers/SpecialController.php");
 // Database
-require_once("Database/Constants.php");
-require_once("Database/DBConnection.php");
+require_once("../DBConnection/Constants.php");
+require_once("../DBConnection/DBConnection.php");
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ require_once("Database/DBConnection.php");
     <?php include("views/PartialViews/SideMenu.php"); ?>
     <div class="main-panel">
         <?php include("views/PartialViews/Navbar.php"); ?>
-        <h5>Change this header! - Front controller</h5>
+        <h5>Dynamic Header here..</h5>
         <?php
         $action = "";
         if (isset($_GET['action']) && !empty($_GET['action'])) {
@@ -85,8 +85,8 @@ require_once("Database/DBConnection.php");
                 } else
                     $controller->Index();
                 break;
-        } ?>
-        <?php include("views/PartialViews/Footer.php"); ?>
+        }
+        include("views/PartialViews/Footer.php"); ?>
     </div>
 </div>
 <script src="assets/js/core/popper.min.js"></script>

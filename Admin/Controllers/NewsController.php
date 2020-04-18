@@ -7,7 +7,7 @@ class NewsController
 
     public function __construct()
     {
-        $this->model = new News();
+        $this->model = new NewsModel();
     }
 
     public function Index()

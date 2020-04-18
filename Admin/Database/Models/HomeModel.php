@@ -1,11 +1,11 @@
 <?php
 
-class Home
+class HomeModel
 {
     private $db;
 
     /**
-     * Home constructor.
+     * HomeModel constructor.
      */
     public function __construct()
     {
@@ -44,7 +44,6 @@ class Home
         } catch (PDOException $exception) {
             echo "Error has occurred: " . $exception->getMessage();
         }
-
     }
 
     /**
@@ -120,7 +119,6 @@ class Home
      */
     public function UpdateBusinessHours($ID, $openAt, $closeAt)
     {
-        echo $ID . $openAt . $closeAt;
         try {
             $stmt = $this->db->GetConnection()->prepare(
                 "UPDATE Business_hours 

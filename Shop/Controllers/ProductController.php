@@ -1,41 +1,33 @@
 <?php
-include(__DIR__ . "./../Views/Home.php");
 
 class ProductController
 {
     private $model;
-    private $products;
 
     /**
      * ProductController constructor.
      */
     public function __construct()
     {
-        $this->model = new Product();
-        $this->products = $this->model->GetAllProducts();
+        $this->model = new ProductModel();
 
     }
 
-    /**
-     *
-     */
     public function Index()
     {
-
+        $products = $this->model->GetAll();
         include(__DIR__ . "./../Views/Product.php");
     }
 
-
-    function ObjectToArrayrray($obj)
+    public function ProductDetails()
     {
-        if (is_array($this->products) || is_object($this->products)) {
-            $result = array();
-            foreach ($this->products as $key => $value) {
-                $result[$key] = object_to_array($value);
-            }
-            return $result;
-            var_dump($result);
+        if (isset($_GET['id'])) {
+            $id = $_GET['id'];
+            $product = $this->model->GetById($id);
+            include("../Views/ProductDetails.php");
+            var_dump($product);
+            echo $id;
         }
-        return $obj;
     }
+
 }

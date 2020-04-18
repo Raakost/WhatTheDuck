@@ -6,7 +6,7 @@ class SpecialController
 
     public function __construct()
     {
-        $this->model = new Special();
+        $this->model = new SpecialModel();
     }
 
     public function Index()

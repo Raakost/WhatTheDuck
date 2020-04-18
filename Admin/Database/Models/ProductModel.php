@@ -1,11 +1,11 @@
 <?php
 
-class Product
+class ProductModel
 {
     private $db;
 
     /**
-     * Product constructor.
+     * ProductModel constructor.
      */
     public function __construct()
     {
@@ -29,7 +29,7 @@ class Product
             $stmt->execute();
             return $stmt->fetch(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
-            echo "Exception message - Product model: " . $exception->getMessage();
+            echo "Exception message - ProductModel model: " . $exception->getMessage();
         }
 
     }
@@ -49,7 +49,7 @@ class Product
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
-            echo "Exception message - Product model: " . $exception->getMessage();
+            echo "Exception message - ProductModel model: " . $exception->getMessage();
         }
     }
 
@@ -75,7 +75,7 @@ class Product
             return $this->db->GetConnection()->lastInsertId();
 
         } catch (PDOException $exception) {
-            echo "Exception message - Product model: " . $exception->getMessage();
+            echo "Exception message - ProductModel model: " . $exception->getMessage();
         }
     }
 
@@ -98,7 +98,7 @@ class Product
                 $stmt->execute();
             }
         } catch (PDOException $exception) {
-            echo "Exception message - Product model: " . $exception->getMessage();
+            echo "Exception message - ProductModel model: " . $exception->getMessage();
         }
 
     }
@@ -114,7 +114,7 @@ class Product
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
-            echo "Exception message - Product model: " . $exception->getMessage();
+            echo "Exception message - ProductModel model: " . $exception->getMessage();
         }
     }
 
@@ -134,7 +134,7 @@ class Product
             $stmt->bindParam(":Id", $id);
             $stmt->execute();
         } catch (PDOException $exception) {
-            echo "Exception message - Product model: " . $exception->getMessage();
+            echo "Exception message - ProductModel model: " . $exception->getMessage();
         }
     }
 

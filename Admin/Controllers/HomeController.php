@@ -6,7 +6,7 @@ class HomeController
 
     public function __construct()
     {
-        $this->model = new Home();
+        $this->model = new HomeModel();
     }
 
     /**
@@ -21,11 +21,11 @@ class HomeController
     }
 
     /**
+     * Update company info.
      *
      */
     public function UpdateInfo()
     {
-        echo var_dump($_POST);
         if (isset($_POST['phone']) && ($_POST['email']) && ($_POST['description']) && ($_POST['country'])
             && ($_POST['street']) && ($_POST['zipcode']) && ($_POST['city']) && ($_POST['addressID'])) {
             $email = $_POST['email'];
@@ -52,7 +52,6 @@ class HomeController
                     $this->model->UpdateBusinessHours($ID, $openAt, $closeAt);
                 }
             }
-
         }
         $this->Index();
     }

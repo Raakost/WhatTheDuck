@@ -7,7 +7,7 @@ class OrderController
 
     public function __construct()
     {
-        $this->model = new Order();
+        $this->model = new OrderModel();
     }
 
     public function Index()
