@@ -3,7 +3,6 @@
 require_once("Database/Models/NewsModel.php");
 require_once("Database/Models/ProductModel.php");
 require_once("Database/Models/CompanyInfoModel.php");
-require_once("Database/Models/BusinessHoursModel.php");
 // Controllers
 require_once("Controllers/HomeController.php");
 require_once("Controllers/ProductController.php");

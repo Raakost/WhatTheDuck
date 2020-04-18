@@ -2,43 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Shop/Controllers/CompanyInfoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Database/Models/CompanyInfoModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Database/Models/NewsModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Database/Models/ProductModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/SpecialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/SpecialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection/Constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/DBConnection.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection/DBConnection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/DBConnectionTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/HomeModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/NewsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/OrderModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/ProductModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/Special.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/SpecialModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Interfaces/IModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/js/paper-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/js/paper-dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/js/paper-dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/js/paper-dashboard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/scss/paper-dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/scss/paper-dashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/front-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/PartialViews/Footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/css/paper-dashboard.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/js/paper-dashboard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/scss/paper-dashboard.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +73,7 @@
       <workItem from="1586508120107" duration="41712000" />
       <workItem from="1586689409907" duration="62621000" />
       <workItem from="1586975217577" duration="2537000" />
-      <workItem from="1586977996036" duration="20519000" />
+      <workItem from="1586977996036" duration="20633000" />
     </task>
     <servers />
   </component>
