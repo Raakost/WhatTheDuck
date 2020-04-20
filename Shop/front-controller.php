@@ -1,5 +1,6 @@
 <?php
 // Models
+require_once("Database/Models/DailySpecialModel.php");
 require_once("Database/Models/NewsModel.php");
 require_once("Database/Models/ProductModel.php");
 require_once("Database/Models/CompanyInfoModel.php");
@@ -7,7 +8,8 @@ require_once("Database/Models/CompanyInfoModel.php");
 require_once("Controllers/HomeController.php");
 require_once("Controllers/ProductController.php");
 require_once("Controllers/CompanyInfoController.php");
-
+require_once("Controllers/NewsController.php");
+require_once("Controllers/DailySpecialController.php");
 // Database
 require_once("../DBConnection/Constants.php");
 require_once("../DBConnection/DBConnection.php");
@@ -65,6 +67,20 @@ require_once("../DBConnection/DBConnection.php");
             break;
         case '/projects/WhatTheDuck/Shop/Product.php':
             $controller = new ProductController();
+            if (!empty($action)) {
+                $controller = $controller->{$action}();
+            } else
+                $controller->Index();
+            break;
+        case '/projects/WhatTheDuck/Shop/News.php':
+            $controller = new NewsController();
+            if (!empty($action)) {
+                $controller = $controller->{$action}();
+            } else
+                $controller->Index();
+            break;
+        case '/projects/WhatTheDuck/Shop/DailySpecial.php':
+            $controller = new DailySpecialController();
             if (!empty($action)) {
                 $controller = $controller->{$action}();
             } else

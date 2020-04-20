@@ -20,8 +20,8 @@ class HomeModel
         try {
             $stmt = $this->db->GetConnection()->query(
                 "SELECT * FROM Company_info CI
-                        INNER JOIN Addresses AD ON CI.Address_ID = AD.ID
-                        INNER JOIN Zipcodes ZI ON AD.Zipcode_ID = ZI.ID;");
+                        INNER JOIN Address AD ON CI.Address_ID = AD.ID
+                        INNER JOIN Zipcode ZI ON AD.Zipcode_ID = ZI.ID;");
             return $stmt->fetch(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
             echo "Error has occurred: " . $exception->getMessage();
@@ -38,7 +38,7 @@ class HomeModel
                 "SELECT DATE_FORMAT(BH.Open_at, '%H:%i') Open_at,
                         DATE_FORMAT(BH.Close_at, '%H:%i') 
                         AS Close_at, BH.ID, WD.Weekday 
-                        FROM Business_hours BH INNER JOIN Weekdays WD ON BH.Weekday_ID = WD.ID
+                        FROM Business_hours BH INNER JOIN Weekday WD ON BH.Weekday_ID = WD.ID
                         WHERE Company_info_ID = 1;");
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
@@ -78,28 +78,28 @@ class HomeModel
     {
         try {
             $stmt = $this->db->GetConnection()->prepare(
-                "SELECT * FROM Zipcodes WHERE Zipcode = :Zipcode;");
+                "SELECT * FROM Zipcode WHERE Zipcode = :Zipcode;");
             $stmt->bindParam(":Zipcode", $zipcode);
             $stmt->execute();
 
             $zipId = $stmt->fetch(PDO::FETCH_ASSOC)['ID'];
             if (!$zipId) {
                 $stmt = $this->db->GetConnection()->prepare(
-                    "INSERT INTO Zipcodes(Zipcode, City) VALUES(:Zipcode, :City)");
+                    "INSERT INTO Zipcode(Zipcode, City) VALUES(:Zipcode, :City)");
                 $stmt->bindParam(":Zipcode", $zipcode);
                 $stmt->bindParam(":City", $city);
                 $stmt->execute();
                 $zipId = $this->db->GetConnection()->lastInsertId();
             } else {
                 $stmt = $this->db->GetConnection()->prepare(
-                    "UPDATE Zipcodes SET City = :City WHERE ID = :zipId ");
+                    "UPDATE Zipcode SET City = :City WHERE ID = :zipId ");
                 $stmt->bindParam(":zipId", $zipId);
                 $stmt->bindParam(":City", $city);
                 $stmt->execute();
             }
 
             $stmt = $this->db->GetConnection()->prepare(
-                "UPDATE Addresses 
+                "UPDATE Address 
                             SET Street = :Street, Country = :Country, Zipcode_ID = :Zipcode_ID
                             WHERE ID = :Address_ID;");
             $stmt->bindParam(":Street", $street);

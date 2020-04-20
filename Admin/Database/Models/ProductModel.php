@@ -21,9 +21,9 @@ class ProductModel
     {
         try {
             $stmt = $this->db->GetConnection()->prepare(
-                "SELECT * FROM Products P
-                        LEFT JOIN Product_categories PC ON P.ID = PC.Product_ID
-                        LEFT JOIN Categories C ON C.ID = PC.Category_ID;
+                "SELECT * FROM Product P
+                        LEFT JOIN Product_category PC ON P.ID = PC.Product_ID
+                        LEFT JOIN Category C ON C.ID = PC.Category_ID;
                         WHERE ID = :ID");
             $stmt->bindParam(":ID", $id);
             $stmt->execute();
@@ -42,9 +42,9 @@ class ProductModel
     {
         try {
             $stmt = $this->db->GetConnection()->prepare(
-                "SELECT P.ID, P.Name, P.Description, P.Price, P.Image, C.Category_name, C.ID CID FROM Products P 
-                        LEFT JOIN Product_categories PC ON P.ID = PC.Product_ID
-                        LEFT JOIN Categories C ON C.ID = PC.Category_ID;
+                "SELECT P.ID, P.Name, P.Description, P.Price, P.Image, C.Category_name, C.ID CID FROM Product P 
+                        LEFT JOIN Product_category PC ON P.ID = PC.Product_ID
+                        LEFT JOIN Category C ON C.ID = PC.Category_ID;
                         ");
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -64,7 +64,7 @@ class ProductModel
     {
         try {
             $stmt = $this->db->GetConnection()->prepare(
-                "INSERT INTO Products(Name, Description, Price, Image)
+                "INSERT INTO Product(Name, Description, Price, Image)
                             VALUES(:Name, :Description, :Price, :Image);");
             $stmt->bindParam(":Name", $name);
             $stmt->bindParam(":Description", $description);
@@ -87,12 +87,12 @@ class ProductModel
     {
         try {
             $stmt = $this->db->GetConnection()->prepare(
-                "DELETE FROM Product_categories WHERE Product_ID = :ProductId ");
+                "DELETE FROM Product_category WHERE Product_ID = :ProductId ");
             $stmt->bindParam(":ProductId", $productID);
             $stmt->execute();
             foreach ($categories as $category) {
                 $stmt = $this->db->GetConnection()->prepare(
-                    "INSERT INTO Product_categories(Product_ID, Category_ID) VALUES (:ProductId,:CategoryId)");
+                    "INSERT INTO Product_category(Product_ID, Category_ID) VALUES (:ProductId,:CategoryId)");
                 $stmt->bindParam(":ProductId", $productID);
                 $stmt->bindParam(":CategoryId", $category);
                 $stmt->execute();
@@ -110,7 +110,7 @@ class ProductModel
     {
         try {
             $stmt = $this->db->GetConnection()->prepare(
-                "SELECT * FROM Categories;");
+                "SELECT * FROM Category;");
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
@@ -125,12 +125,12 @@ class ProductModel
     {
         try {
             $stmtDeleteCategories = $this->db->GetConnection()->prepare(
-                "Delete FROM Product_categories WHERE Product_Id=:Id;");
+                "Delete FROM Product_category WHERE Product_Id=:Id;");
             $stmtDeleteCategories->bindParam(":Id", $id);
             $stmtDeleteCategories->execute();
 
             $stmt = $this->db->GetConnection()->prepare(
-                "DELETE FROM Products WHERE ID=:Id;");
+                "DELETE FROM Product WHERE ID=:Id;");
             $stmt->bindParam(":Id", $id);
             $stmt->execute();
         } catch (PDOException $exception) {

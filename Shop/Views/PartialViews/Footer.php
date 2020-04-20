@@ -2,11 +2,55 @@
 <!-- Subscribe section -->
 <div class="w3-container w3-black w3-padding-64 w3-margin-top-big"></div>
 
+<style>
+    .footer-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        color: #444;
+        padding: 0 16px
+    }
+
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    @media screen and (max-width: 992px) {
+        .footer-wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 15px;
+            grid-gap: 10px;
+        }
+
+        .footer-headers {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+        }
+    }
+
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .footer-wrapper {
+            grid-template-columns: 1fr;
+            padding: 15px;
+            grid-gap: 10px;
+        }
+
+        .footer-headers {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+        }
+    }
+
+
+</style>
+
+
 <!-- Footer -->
-<footer class="w3-padding-64 footer-background w3-small w3-center" id="footer">
-    <div class="w3-row-padding">
-        <div class="w3-col s4">
-            <h4>CONTACT</h4>
+<footer class="w3-padding-16 footer-background w3-small w3-center" id="footer">
+    <div class="footer-wrapper">
+        <div class="box">
+            <h4 class="footer-headers">CONTACT</h4>
             <p>Questions? Go ahead.</p>
             <form action="/action_page.php" target="_blank">
                 <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
@@ -16,20 +60,17 @@
                 <button type="submit" class="w3-button w3-block w3-black">Send</button>
             </form>
         </div>
-        <div class="w3-col s4">
-            <h4>LOCATION</h4><br>
+        <div class="box">
+            <h4 class="footer-headers">LOCATION</h4><br>
             <p><?php echo $info["Street"]; ?></p>
             <p><span><?php echo $info["Zipcode"]; ?> </span><span><?php echo $info["City"]; ?></span></p>
             <p><?php echo $info["Country"]; ?></p>
             <p><i class="fa fa-fw fa-phone"></i> <?php echo $info["Phone"]; ?></p>
             <p><i class="fa fa-fw fa-envelope"></i> <?php echo $info["Email"]; ?></p>
-            <i class="fa fa-facebook-official w3-hover-opacity w3-large" style="margin-top: 50px;"></i>
-            <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
-            <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+
         </div>
-        <div class="w3-col s4">
-            <h4>ABOUT</h4><br>
+        <div class="box">
+            <h4 class="footer-headers">ABOUT</h4><br>
             <p class="w3-justify"><?php echo $info["Description"]; ?></p>
         </div>
     </div>

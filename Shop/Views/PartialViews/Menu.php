@@ -8,7 +8,7 @@
         <h3 class="w3-wide">WHAT THE DUCK?!</h3>
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-        <a href="Product.php" class="w3-bar-item w3-button">Duck Shop</a>
+        <a href="Product.php" class="w3-bar-item w3-button">Shop</a>
         <a href="News.php" class="w3-bar-item w3-button">News</a>
         <a href="DailySpecial.php" class="w3-bar-item w3-button">Daily Special</a>
     </div>

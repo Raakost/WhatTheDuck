@@ -15,14 +15,14 @@
 <div class="w3-display-container w3-container">
     <img src="assets/img/ducksonrow.jpeg" style="width:100%; opacity: 80%;">
     <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-        <h1 class="w3-hide-small">DAILY SPECIAL OFFER</h1>
+        <h1 class="w3-hide-small">DAILY SPECIAL</h1>
         <h1 class="w3-hide-large w3-hide-medium">DAILY SPECIAL OFFER</h1>
         <h1 class="w3-large w3-hide-small">Check it out... </h1>
         <p><a href="#" class="w3-button w3-black w3-padding-large w3-large">SHOP NOW</a></p>
     </div>
 </div>
 <div class="w3-container w3-text-grey w3-margin-top-big" id="news-section">
-    <h2>LATEST NEWS</h2>
+    <h3 class="w3-black w3-padding-large">Latest News</h3>
 </div>
 
 <!-- Product grid -->
