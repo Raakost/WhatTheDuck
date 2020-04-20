@@ -1,51 +1,6 @@
 <?php ?>
 <!-- Subscribe section -->
 <div class="w3-container w3-black w3-padding-64 w3-margin-top-big"></div>
-
-<style>
-    .footer-wrapper {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
-        color: #444;
-        padding: 0 16px
-    }
-
-    /* On screens that are 992px wide or less, go from four columns to two columns */
-    @media screen and (max-width: 992px) {
-        .footer-wrapper {
-            grid-template-columns: 1fr 1fr 1fr;
-            padding: 15px;
-            grid-gap: 10px;
-        }
-
-        .footer-headers {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 20px;
-        }
-    }
-
-    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-        .footer-wrapper {
-            grid-template-columns: 1fr;
-            padding: 15px;
-            grid-gap: 10px;
-        }
-
-        .footer-headers {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 20px;
-        }
-    }
-
-
-</style>
-
-
 <!-- Footer -->
 <footer class="w3-padding-16 footer-background w3-small w3-center" id="footer">
     <div class="footer-wrapper">

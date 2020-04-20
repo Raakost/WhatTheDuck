@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProductImages/batman.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/flash.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/frankenstein.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/horse.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/ironman.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/joker.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/mrsFrankenstein.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Database/Models/DailySpecialModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/DailySpecial.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/News.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/HomeModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/ProductModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DBConnection/Constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection/Constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductImages/475185A5-64D1-427B-B3F8-B1A405B1FF57.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductImages/96383A18-766D-49AB-81C7-235BFEEB256C.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductImages/97724360-0850-4268-86DD-25F74B64E1C3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductImages/A03CC600-08A0-4A14-B8DF-2210FE9572BF.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductImages/sam.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductImages/unicorn.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductImages/{112F63D5-1880-40E3-8104-14E9410ECD8A}" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductImages/{C24B56ED-0A05-405B-8B4A-6EEC6938AE4D}" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/SpecialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/DailySpecialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Database/Models/CompanyInfoModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Database/Models/CompanyInfoModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Database/Models/NewsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Database/Models/NewsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Database/Models/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Database/Models/ProductModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Views/PartialViews/Footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +76,7 @@
       <workItem from="1586689409907" duration="62621000" />
       <workItem from="1586975217577" duration="2537000" />
       <workItem from="1586977996036" duration="23484000" />
-      <workItem from="1587192570838" duration="27327000" />
+      <workItem from="1587192570838" duration="27394000" />
     </task>
     <servers />
   </component>
