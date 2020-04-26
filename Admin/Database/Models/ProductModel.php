@@ -42,7 +42,7 @@ class ProductModel
     {
         try {
             $stmt = $this->db->GetConnection()->prepare(
-                "SELECT P.ID, P.Name, P.Description, P.Price, P.Image, C.Category_name, C.ID CID FROM Product P 
+                "SELECT P.ID, P.Name, P.Description, P.Price, P.Image, C.Category_name, C.ID CID, IsSpecial FROM Product P 
                         LEFT JOIN Product_category PC ON P.ID = PC.Product_ID
                         LEFT JOIN Category C ON C.ID = PC.Category_ID;
                         ");

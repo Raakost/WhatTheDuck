@@ -60,6 +60,7 @@ require_once("../DBConnection/DBConnection.php");
     switch (preg_split("/\?/", $_SERVER['REQUEST_URI']) [0]) {
         case '/projects/WhatTheDuck/Shop/Home.php':
             $controller = new HomeController();
+            $newsController = new NewsController();
             if (!empty($action)) {
                 $controller = $controller->{$action}();
             } else

@@ -68,7 +68,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card-header ">
-                                <h5>Company Description</h5>
+                                <h5>Description</h5>
                             </div>
                             <div class="card-body">
                                         <textarea id="companyDescription"

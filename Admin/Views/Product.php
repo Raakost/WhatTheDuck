@@ -3,7 +3,7 @@
         <div class="col-md-10">
             <div class="card no-border-radius">
                 <div class="card-header ">
-                    <h5 class="card-title">New Product</h5>
+                    <h4 class="card-title">Product</h4>
                 </div>
                 <div class="card-body">
                     <form method="post" enctype="multipart/form-data">
@@ -62,9 +62,6 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card no-border-radius">
-                <div class="card-header">
-                    <h5 class="card-title">Product List</h5>
-                </div>
                 <div class="card-body">
                     <div class="col-md-12" style="padding:0">
                         <div class="table-responsive">
@@ -76,6 +73,7 @@
                                     <th>Description</th>
                                     <th>Price</th>
                                     <th>Category</th>
+                                    <th>Daily Special</th>
                                     <th>Image</th>
                                     <th class="text-right"></th>
                                 </tr>
@@ -88,17 +86,17 @@
                                             $categoryString = $categoryString . " " . $category->catName;
                                         }
                                         echo '
-                                    <tr>
+                                    <tr style="font-size: 12px;">
                                         <td style="padding: 10px;">' . $row->id . '</td>
                                         <td style="padding: 10px;">' . $row->name . '</td>
-                                        <td style="padding: 10px; max-width: 200px;">' . $row->description . '</td>
+                                        <td style="padding: 10px; max-width: 200px; white-space: nowrap; text-overflow: ellipsis;  overflow: hidden;">' . $row->description . '</td>
                                         <td style="padding:10px;">' . $row->price . '</td>
-                                        <td style="padding:10px;">' . $categoryString . '</td>
-                                        <td style="padding:10px;">' . $row->image . '</td>
+                                        <td style="padding:10px;"> ' . $categoryString . ' </td>
+                                        <td style="padding:10px;">' . $row->special . ' </td>
+                                        <td style="padding: 10px; max-width: 50px;"><img src="../ProductImages/' . $row->image . '" style="width:50%"></td>
                                         <td class="text-right"
-                                            style="padding:10px; width: 130px; min-width: 130px;">
-                                            <a href=""
-                                               style="color: darkorange; text-decoration: underline; padding: 10px">Edit</a>
+                                            style="padding:10px; width: 130px; min-width: 100px;">
+                                            <a href="" style=" padding: 10px">Edit</a>
                                             <a href="?action=DeleteProduct&id=' . $row->id . '" style="color:red; text-decoration: underline; padding: 5px 5px 5px 5px;" onClick="return confirm(\'Delete This product?\')">Delete</a>
                                         </td>
                                     </tr>';

@@ -5,7 +5,7 @@ class NewsModel
     private $db;
 
     /**
-     * HomeModel constructor.
+     * NewsModel constructor.
      */
     public function __construct()
     {
@@ -16,7 +16,7 @@ class NewsModel
     {
         try {
             $stmt = $this->db->GetConnection()->query(
-                "SELECT * FROM News;");
+                "SELECT * FROM News ORDER BY ID DESC;");
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
             echo "Error has occurred: " . $exception->getMessage();
@@ -24,11 +24,11 @@ class NewsModel
 
     }
 
-    public function GetLatestThree()
+    public function GetLatestFour()
     {
         try {
             $stmt = $this->db->GetConnection()->query(
-                "SELECT * FROM News ORDER BY id DESC LIMIT 3;");
+                "SELECT * FROM News ORDER BY ID DESC LIMIT 4;");
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
             echo "Error has occurred: " . $exception->getMessage();
@@ -38,14 +38,13 @@ class NewsModel
     public function GetById($id)
     {
         try {
-            $stmt = $this->db->GetConnection()->query(
+            $stmt = $this->db->GetConnection()->prepare(
                 "SELECT * FROM News WHERE ID = :Id;");
             $stmt->bindParam(":Id", $id);
+            $stmt->execute();
             return $stmt->fetch(PDO::FETCH_ASSOC);
         } catch (PDOException $exception) {
             echo "Error has occurred: " . $exception->getMessage();
         }
     }
-
-
 }

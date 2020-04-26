@@ -14,6 +14,6 @@ class DailySpecialController
 
     public function Index()
     {
-        include(__DIR__ . "./../Views/DailySpecial.php");
+        require(__DIR__ . "./../Views/DailySpecial.php");
     }
 }

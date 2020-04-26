@@ -4927,7 +4927,8 @@ License - nucleoapp.com/license/
 
 .sidebar[data-color="black"]:after,
 .off-canvas-sidebar[data-color="black"]:after {
-    background: #212120;
+    /*background: #212120;*/
+    background-color: #544a4a;
 }
 
 .sidebar[data-active-color="primary"] .nav li.active > a,
@@ -6573,9 +6574,14 @@ License - nucleoapp.com/license/
     border-color: #66615b;
 }
 
-#product-table_filter  {
+#product-table_filter {
     float: right;
 }
+
 #order-table_filter {
+    float: right;
+}
+
+#news-table_filter {
     float: right;
 }

@@ -1460,7 +1460,8 @@ a {
 
 .w3-black, .w3-hover-black:hover {
     color: #fff !important;
-    background-color: #000 !important
+    /*background-color: #000 !important*/
+    background-color: #544a4a !important;
 }
 
 .w3-grey, .w3-hover-grey:hover, .w3-gray, .w3-hover-gray:hover {
@@ -1782,10 +1783,43 @@ a {
 .product-wrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-row-gap: 25px;
     color: #444;
 }
+
+.all-news-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-row-gap: 25px;
+    color: #444;
+}
+
+.news-box {
+    color: #000000;
+    font-size: 100%;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.news-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    color: #444;
+}
+
+.news-flex-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-sizing: border-box;
+}
+
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
@@ -1873,4 +1907,25 @@ a {
         color: #ffffff;
         padding: 20px;
     }
+}
+
+.w3-button:hover {
+    color: #ffffff !important;
+    background-color: #352f2f !important;
+}
+
+.news-div-hover {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.news-div-hover:hover {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    opacity: 90%;
 }

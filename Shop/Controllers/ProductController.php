@@ -15,9 +15,14 @@ class ProductController
     public function Index()
     {
         $products = $this->model->GetAll();
-        include(__DIR__ . "./../Views/Product.php");
+        require(__DIR__ . "./../Views/Product.php");
     }
 
+    /**
+     * Get product and all category id's.
+     * Recommended products are fetched from db with the same category id's and added to list.
+     * lastly the product itself is removed from the list.
+     */
     public function ProductDetails()
     {
         if (isset($_GET['id'])) {
@@ -38,6 +43,8 @@ class ProductController
                     }
                 }
             }
+            //var_dump($uniqueProducts[$id]);
+            unset($uniqueProducts[$id]);
             // var_dump($uniqueProducts);
             include(__DIR__ . "./../Views/ProductDetails.php");
         }

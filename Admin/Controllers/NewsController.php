@@ -2,7 +2,6 @@
 
 class NewsController
 {
-
     private $model;
 
     public function __construct()
@@ -12,6 +11,7 @@ class NewsController
 
     public function Index()
     {
-        include(__DIR__ . "./../Views/News.php");
+        $news = $this->model->GetAll();
+        require(__DIR__ . "./../Views/News.php");
     }
 }

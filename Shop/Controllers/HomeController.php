@@ -11,7 +11,8 @@ class HomeController
 
     public function Index()
     {
-        include(__DIR__ . "./../Views/Home.php");
+        $news = $this->newsModel->GetLatestFour();
+        require(__DIR__ . "./../Views/Home.php");
     }
 
 

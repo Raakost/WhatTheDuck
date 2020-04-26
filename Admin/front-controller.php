@@ -33,13 +33,15 @@ require_once("../DBConnection/DBConnection.php");
     <script src="assets/js/core/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
 </head>
 <body class="">
 <div class="wrapper ">
     <?php include("views/PartialViews/SideMenu.php"); ?>
     <div class="main-panel">
         <?php include("views/PartialViews/Navbar.php"); ?>
-        <h5>Dynamic Header here..</h5>
+
         <?php
         $action = "";
         if (isset($_GET['action']) && !empty($_GET['action'])) {
@@ -94,7 +96,6 @@ require_once("../DBConnection/DBConnection.php");
 <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
 <script src="assets/js/plugins/bootstrap-notify.js"></script>
 <script src="assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
+
 </body>
 </html>

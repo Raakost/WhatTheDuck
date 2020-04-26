@@ -16,7 +16,7 @@ class CompanyInfoController
     {
         $info = $this->model->GetCompanyInfoById();
         $businessHours = $this->model->GetBusinessHours();
-        include(__DIR__ . "./../Views/PartialViews/Footer.php");
+        require(__DIR__ . "./../Views/PartialViews/Footer.php");
     }
 
 

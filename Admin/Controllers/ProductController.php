@@ -26,6 +26,7 @@ Class ProductController
             $cid = $row["CID"];
             $catName = $row["Category_name"];
             $image = $row["Image"];
+            $special = $row["IsSpecial"];
             $catObj = new stdClass;
             $catObj->cid = $cid;
             $catObj->catName = $catName;
@@ -40,7 +41,8 @@ Class ProductController
                 $prodObj->description = $description;
                 $prodObj->price = $price;
                 $prodObj->image = $image;
-
+                $prodObj->special = $special;
+              //  var_dump($special);
                 $prodCat = array();
                 array_push($prodCat, $catObj);
 

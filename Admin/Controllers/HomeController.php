@@ -17,7 +17,7 @@ class HomeController
     {
         $companyInfo = $this->model->GetCompanyInfo();
         $businessHours = $this->model->GetBusinessHours();
-        include(__DIR__ . "./../Views/Home.php");
+        require(__DIR__ . "./../Views/Home.php");
     }
 
     /**
@@ -28,7 +28,7 @@ class HomeController
     {
         if (isset($_POST['phone']) && ($_POST['email']) && ($_POST['description']) && ($_POST['country'])
             && ($_POST['street']) && ($_POST['zipcode']) && ($_POST['city']) && ($_POST['addressID'])) {
-            $email = $_POST['email'];
+            $email = trim(htmlspecialchars( $_POST['email']));
             $phone = $_POST['phone'];
             $description = $_POST['description'];
             $country = $_POST['country'];
