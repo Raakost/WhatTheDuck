@@ -88,13 +88,16 @@ Class ProductController
             if ($_FILES["file"]["error"] > 0) {
                 echo "Error: " . $_FILES["file"]["error"] . "<br>";
             } else {
-                $newFileName = trim(com_create_guid(), '{}') . '.' . preg_split("/\./", $_FILES["file"]["name"])[1];
+                $newFileName = $_FILES["file"]["name"];
+                //$newFileName = trim(com_create_guid(), '{}') . '.' . preg_split("/\./", $_FILES["file"]["name"])[1];
 
-                if (file_exists("../ProductImages/" . $newFileName)) {
+                //if (file_exists("../ProductImages/" . $newFileName)) {
+                if (file_exists(__DIR__ ."./../../ProductImages/" . $newFileName)) {
                     echo "already exists";
                 } else {
                     move_uploaded_file($_FILES["file"]["tmp_name"],
-                        "../ProductImages/" . $newFileName);
+                        //"../ProductImages/" . $newFileName);
+                        __DIR__ ."./../../ProductImages/" . $newFileName);
                     return $newFileName;
                 }
             }

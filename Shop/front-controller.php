@@ -46,7 +46,8 @@ require_once("../DBConnection/DBConnection.php");
 </style>
 
 <body class="w3-content" style="max-width:1200px">
-<?php include("views/PartialViews/Menu.php"); ?>
+<?php include( "./Views/PartialViews/Menu.php"); ?>
+
 <div class="w3-main" style="margin-left:250px">
     <?php
     $action = "";
@@ -57,8 +58,9 @@ require_once("../DBConnection/DBConnection.php");
         $action = $_POST['action'];
     }
 
-    switch (preg_split("/\?/", $_SERVER['REQUEST_URI']) [0]) {
-        case '/projects/WhatTheDuck/Shop/Home.php':
+    switch (strtolower(preg_split("/\?/", $_SERVER['REQUEST_URI']) [0])) {
+        //  case '/projects/whattheduck/shop/home.php':
+        case '/whattheduck/shop/home.php':
             $controller = new HomeController();
             $newsController = new NewsController();
             if (!empty($action)) {
@@ -66,21 +68,24 @@ require_once("../DBConnection/DBConnection.php");
             } else
                 $controller->Index();
             break;
-        case '/projects/WhatTheDuck/Shop/Product.php':
+        // case '/projects/whattheduck/shop/product.php':
+        case '/whattheduck/shop/product.php':
             $controller = new ProductController();
             if (!empty($action)) {
                 $controller = $controller->{$action}();
             } else
                 $controller->Index();
             break;
-        case '/projects/WhatTheDuck/Shop/News.php':
+        //case '/projects/whattheduck/shop/news.php':
+        case '/whattheduck/shop/news.php':
             $controller = new NewsController();
             if (!empty($action)) {
                 $controller = $controller->{$action}();
             } else
                 $controller->Index();
             break;
-        case '/projects/WhatTheDuck/Shop/DailySpecial.php':
+        //case '/projects/whattheduck/shop/dailyspecial.php':
+        case '/whattheduck/shop/dailyspecial.php':
             $controller = new DailySpecialController();
             if (!empty($action)) {
                 $controller = $controller->{$action}();

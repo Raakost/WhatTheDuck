@@ -38,9 +38,9 @@ require_once("../DBConnection/DBConnection.php");
 </head>
 <body class="">
 <div class="wrapper ">
-    <?php include("views/PartialViews/SideMenu.php"); ?>
+    <?php include("./Views/PartialViews/SideMenu.php"); ?>
     <div class="main-panel">
-        <?php include("views/PartialViews/Navbar.php"); ?>
+        <?php include("./Views/PartialViews/Navbar.php"); ?>
 
         <?php
         $action = "";
@@ -51,36 +51,41 @@ require_once("../DBConnection/DBConnection.php");
             $action = $_POST['action'];
         }
 
-        switch (preg_split("/\?/", $_SERVER['REQUEST_URI']) [0]) {
-            case '/projects/WhatTheDuck/Admin/Home.php':
+        switch (strtolower(preg_split("/\?/", $_SERVER['REQUEST_URI']) [0])) {
+            //case '/projects/whattheduck/admin/home.php':
+            case '/whattheduck/admin/home.php':
                 $controller = new HomeController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();
                 } else
                     $controller->Index();
                 break;
-            case '/projects/WhatTheDuck/Admin/Product.php':
+            //case '/projects/whattheduck/admin/product.php':
+            case '/whattheduck/admin/product.php':
                 $controller = new ProductController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();
                 } else
                     $controller->Index();
                 break;
-            case '/projects/WhatTheDuck/Admin/Order.php':
+            //case '/projects/whattheduck/admin/order.php':
+            case '/whattheduck/admin/order.php':
                 $controller = new OrderController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();
                 } else
                     $controller->Index();
                 break;
-            case '/projects/WhatTheDuck/Admin/News.php':
+            //case '/projects/whattheduck/admin/news.php':
+            case '/whattheduck/admin/news.php':
                 $controller = new NewsController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();
                 } else
                     $controller->Index();
                 break;
-            case '/projects/WhatTheDuck/Admin/Special.php':
+            //case '/projects/whattheduck/admin/special.php':
+            case '/whattheduck/admin/special.php':
                 $controller = new SpecialController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();
@@ -88,7 +93,7 @@ require_once("../DBConnection/DBConnection.php");
                     $controller->Index();
                 break;
         }
-        include("views/PartialViews/Footer.php"); ?>
+        include("./Views/PartialViews/Footer.php"); ?>
     </div>
 </div>
 <script src="assets/js/core/popper.min.js"></script>
