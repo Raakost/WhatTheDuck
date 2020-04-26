@@ -28,14 +28,14 @@ class HomeController
     {
         if (isset($_POST['phone']) && ($_POST['email']) && ($_POST['description']) && ($_POST['country'])
             && ($_POST['street']) && ($_POST['zipcode']) && ($_POST['city']) && ($_POST['addressID'])) {
-            $email = trim(htmlspecialchars( $_POST['email']));
-            $phone = $_POST['phone'];
-            $description = $_POST['description'];
-            $country = $_POST['country'];
-            $street = $_POST['street'];
-            $zipcode = $_POST['zipcode'];
-            $city = $_POST['city'];
-            $addressID = $_POST['addressID'];
+            $email = trim(htmlspecialchars($_POST['email']));
+            $phone = trim(htmlspecialchars($_POST['phone']));
+            $description = trim(htmlspecialchars($_POST['description']));
+            $country = trim(htmlspecialchars($_POST['country']));
+            $street = trim(htmlspecialchars($_POST['street']));
+            $zipcode = trim(htmlspecialchars($_POST['zipcode']));
+            $city = trim(htmlspecialchars($_POST['city']));
+            $addressID = trim(htmlspecialchars($_POST['addressID']));
 
             $this->model->UpdateCompanyInfo($email, $phone, $description);
 
@@ -46,9 +46,9 @@ class HomeController
             $businessHours = $_POST['businessHours'];
             if (count($businessHours) == 7) {
                 foreach ($businessHours as $item) {
-                    $ID = $item['ID'];
-                    $openAt = $item['openAt'];
-                    $closeAt = $item['closeAt'];
+                    $ID = trim(htmlspecialchars($item['ID']));
+                    $openAt = trim(htmlspecialchars($item['openAt']));
+                    $closeAt = trim(htmlspecialchars($item['closeAt']));
                     $this->model->UpdateBusinessHours($ID, $openAt, $closeAt);
                 }
             }

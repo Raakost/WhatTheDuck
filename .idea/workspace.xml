@@ -2,42 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProductImages/95E7E199-67A5-4030-B403-5639ED00F82A.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/EDF4A90C-757F-402C-9073-3E6AE184DCD1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/devil.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/konge.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/spiderman.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/supergirl.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/supermand.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/wonderwoman.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/NewsDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/assets/img/wonderwoman.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductImages/DEBA1A0B-5BAB-4526-AF0E-343607500704.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductImages/FE16967F-2B23-4264-A153-83C18756D116.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/NewsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/NewsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Database/Models/ProductModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Views/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Views/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Views/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Views/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/assets/css/paper-dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/front-controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/CompanyInfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CompanyInfoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/DailySpecialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/DailySpecialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Database/Models/NewsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Database/Models/NewsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/assets/css/w3shopcss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +80,7 @@
       <workItem from="1586977996036" duration="23484000" />
       <workItem from="1587192570838" duration="28449000" />
       <workItem from="1587624656158" duration="29361000" />
-      <workItem from="1587733874243" duration="11293000" />
+      <workItem from="1587733874243" duration="12256000" />
     </task>
     <servers />
   </component>

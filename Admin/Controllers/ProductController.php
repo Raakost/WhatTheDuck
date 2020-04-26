@@ -19,14 +19,14 @@ Class ProductController
         $categories = $this->model->GetAllCategories();
         $tableProd = array();
         foreach ($products as $row) {
-            $id = $row["ID"];
-            $name = $row["Name"];
-            $description = $row["Description"];
-            $price = $row["Price"];
-            $cid = $row["CID"];
-            $catName = $row["Category_name"];
-            $image = $row["Image"];
-            $special = $row["IsSpecial"];
+            $id = trim(htmlspecialchars($row["ID"]));
+            $name = trim(htmlspecialchars($row["Name"]));
+            $description = trim(htmlspecialchars($row["Description"]));
+            $price = trim(htmlspecialchars($row["Price"]));
+            $cid = trim(htmlspecialchars($row["CID"]));
+            $catName = trim(htmlspecialchars($row["Category_name"]));
+            $image = trim(htmlspecialchars($row["Image"]));
+            $special = trim(htmlspecialchars($row["IsSpecial"]));
             $catObj = new stdClass;
             $catObj->cid = $cid;
             $catObj->catName = $catName;
@@ -42,7 +42,7 @@ Class ProductController
                 $prodObj->price = $price;
                 $prodObj->image = $image;
                 $prodObj->special = $special;
-              //  var_dump($special);
+                //  var_dump($special);
                 $prodCat = array();
                 array_push($prodCat, $catObj);
 
@@ -50,7 +50,7 @@ Class ProductController
                 $tableProd[$id] = $prodObj;
             }
         }
-        include(__DIR__ . "./../Views/Product.php");
+        require(__DIR__ . "./../Views/Product.php");
     }
 
     /**
@@ -60,9 +60,9 @@ Class ProductController
     public function CreateProduct()
     {
         if (isset($_POST['name']) && ($_POST['price']) && ($_POST['description']) && ($_POST['categories'])) {
-            $name = $_POST['name'];
-            $price = $_POST['price'];
-            $description = $_POST['description'];
+            $name = trim(htmlspecialchars($_POST['name']));
+            $price = trim(htmlspecialchars($_POST['price']));
+            $description = trim(htmlspecialchars($_POST['description']));
             $categories = $_POST['categories'];
             $image = $this->UploadImage();
             $prodId = $this->model->CreateProduct($name, $description, $price, $image);
@@ -110,12 +110,12 @@ Class ProductController
     {
 
 
-       /* if (isset($_GET['id'])) {
-            $this->model->UpdateProduct($_GET['id']);
-        } else {
-            echo "No id, couldn't update!";
-        }
-        $this->Index();*/
+        /* if (isset($_GET['id'])) {
+             $this->model->UpdateProduct($_GET['id']);
+         } else {
+             echo "No id, couldn't update!";
+         }
+         $this->Index();*/
     }
 
     /**
