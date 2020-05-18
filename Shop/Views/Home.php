@@ -33,7 +33,7 @@
         <p style="float: right; font-size: 12px; margin-top: 0; margin-bottom: 0;">' . $item['Date'] . '</p>
         <img src="../ProductImages/' . $item['Image'] . '"  style="width:100%;">
         <div class="news-div-hover">
-            <a href="News.php?id=' . $item['ID'] . '&action=NewsDetails" class="w3-button w3-black" style="padding-right:0;">Read more <i
+            <a href="News.php?id='. $item['ID'] . '&action=NewsDetails" class="w3-button w3-black" style="padding-right:0;">Read more <i
                         class="fa fa-angle-right w3-margin-right"></i></a>
         </div>
         <p><b>' . $item['Title'] . '</b></p>

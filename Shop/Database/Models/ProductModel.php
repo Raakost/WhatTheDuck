@@ -44,7 +44,6 @@ class ProductModel
     }
 
     /**
-     *
      * @param $id
      * @return array
      */
@@ -53,9 +52,9 @@ class ProductModel
         try {
             $stmt = $this->db->GetConnection()->prepare(
                 "SELECT P.ID, C.Category_name, C.ID CID FROM Product P 
-                        LEFT JOIN Product_category PC ON P.ID = PC.Product_ID
-                        LEFT JOIN Category C ON C.ID = PC.Category_ID
-                        where P.id = :Id;");
+                        INNER JOIN Product_category PC ON P.ID = PC.Product_ID
+                        INNER JOIN Category C ON C.ID = PC.Category_ID
+                        WHERE P.id = :Id;");
             $stmt->bindParam('Id', $id);
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -72,10 +71,10 @@ class ProductModel
     {
         try {
             $stmt = $this->db->GetConnection()->prepare(
-                "SELECT P.Id, P.Name, P.Price, P.Image FROM Product P 
-                        LEFT JOIN Product_category PC ON P.ID = PC.Product_ID
-                        LEFT JOIN Category C ON C.ID = PC.Category_ID
-                        where C.ID = :Id;");
+                "SELECT P.Id, P.Name, P.Price, P.Image, C.Category_Name FROM Product P 
+                        INNER JOIN Product_category PC ON P.ID = PC.Product_ID
+                        INNER JOIN Category C ON C.ID = PC.Category_ID
+                        WHERE C.ID = :Id;");
             $stmt->bindParam('Id', $id);
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);

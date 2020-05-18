@@ -59,8 +59,8 @@ require_once("../DBConnection/DBConnection.php");
     }
 
     switch (strtolower(preg_split("/\?/", $_SERVER['REQUEST_URI']) [0])) {
-        //  case '/projects/whattheduck/shop/home.php':
-        case '/whattheduck/shop/home.php':
+        case '/projects/whattheduck/shop/home.php': // LOCAL HOST
+        //case '/whattheduck/shop/home.php':
             $controller = new HomeController();
             $newsController = new NewsController();
             if (!empty($action)) {
@@ -68,24 +68,24 @@ require_once("../DBConnection/DBConnection.php");
             } else
                 $controller->Index();
             break;
-        // case '/projects/whattheduck/shop/product.php':
-        case '/whattheduck/shop/product.php':
+         case '/projects/whattheduck/shop/product.php': // LOCAL HOST
+       // case '/whattheduck/shop/product.php':
             $controller = new ProductController();
             if (!empty($action)) {
                 $controller = $controller->{$action}();
             } else
                 $controller->Index();
             break;
-        //case '/projects/whattheduck/shop/news.php':
-        case '/whattheduck/shop/news.php':
+        case '/projects/whattheduck/shop/news.php': // LOCAL HOST
+        //case '/whattheduck/shop/news.php':
             $controller = new NewsController();
             if (!empty($action)) {
                 $controller = $controller->{$action}();
             } else
                 $controller->Index();
             break;
-        //case '/projects/whattheduck/shop/dailyspecial.php':
-        case '/whattheduck/shop/dailyspecial.php':
+        case '/projects/whattheduck/shop/dailyspecial.php': // LOCAL HOST
+       // case '/whattheduck/shop/dailyspecial.php':
             $controller = new DailySpecialController();
             if (!empty($action)) {
                 $controller = $controller->{$action}();

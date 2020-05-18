@@ -19,14 +19,14 @@ Class ProductController
         $categories = $this->model->GetAllCategories();
         $tableProd = array();
         foreach ($products as $row) {
-            $id = trim(htmlspecialchars($row["ID"]));
-            $name = trim(htmlspecialchars($row["Name"]));
-            $description = trim(htmlspecialchars($row["Description"]));
-            $price = trim(htmlspecialchars($row["Price"]));
-            $cid = trim(htmlspecialchars($row["CID"]));
-            $catName = trim(htmlspecialchars($row["Category_name"]));
-            $image = trim(htmlspecialchars($row["Image"]));
-            $special = trim(htmlspecialchars($row["IsSpecial"]));
+            $id = trim(htmlspecialchars($row["ID"], ENT_QUOTES));
+            $name = trim(htmlspecialchars($row["Name"], ENT_QUOTES));
+            $description = trim(htmlspecialchars($row["Description"], ENT_QUOTES));
+            $price = trim(htmlspecialchars($row["Price"], ENT_QUOTES));
+            $cid = trim(htmlspecialchars($row["CID"], ENT_QUOTES));
+            $catName = trim(htmlspecialchars($row["Category_name"], ENT_QUOTES));
+            $image = trim(htmlspecialchars($row["Image"], ENT_QUOTES));
+            $special = trim(htmlspecialchars($row["IsSpecial"], ENT_QUOTES));
             $catObj = new stdClass;
             $catObj->cid = $cid;
             $catObj->catName = $catName;
@@ -42,13 +42,16 @@ Class ProductController
                 $prodObj->price = $price;
                 $prodObj->image = $image;
                 $prodObj->special = $special;
-                //  var_dump($special);
                 $prodCat = array();
                 array_push($prodCat, $catObj);
 
                 $prodObj->categories = $prodCat;
                 $tableProd[$id] = $prodObj;
             }
+        }
+        $editProduct = null;
+        if (isset($_GET['editProduct'])) {
+            $editProduct = $this->model->GetProduct($_GET['editProduct']);
         }
         require(__DIR__ . "./../Views/Product.php");
     }
@@ -60,9 +63,9 @@ Class ProductController
     public function CreateProduct()
     {
         if (isset($_POST['name']) && ($_POST['price']) && ($_POST['description']) && ($_POST['categories'])) {
-            $name = trim(htmlspecialchars($_POST['name']));
-            $price = trim(htmlspecialchars($_POST['price']));
-            $description = trim(htmlspecialchars($_POST['description']));
+            $name = trim(htmlspecialchars($_POST['name'], ENT_QUOTES));
+            $price = trim(htmlspecialchars($_POST['price'], ENT_QUOTES));
+            $description = trim(htmlspecialchars($_POST['description'], ENT_QUOTES));
             $categories = $_POST['categories'];
             $image = $this->UploadImage();
             $prodId = $this->model->CreateProduct($name, $description, $price, $image);
@@ -83,21 +86,21 @@ Class ProductController
                 || ($_FILES["file"]["type"] == "image/gif")
                 || ($_FILES["file"]["type"] == "image/png")
                 || ($_FILES["file"]["type"] == "image/jpg"))
-            && ($_FILES["file"]["size"] < 10000000)) {
+            && ($_FILES["file"]["size"] < 1000000)) {
 
             if ($_FILES["file"]["error"] > 0) {
                 echo "Error: " . $_FILES["file"]["error"] . "<br>";
             } else {
-                $newFileName = $_FILES["file"]["name"];
-                //$newFileName = trim(com_create_guid(), '{}') . '.' . preg_split("/\./", $_FILES["file"]["name"])[1];
+                //  $newFileName = $_FILES["file"]["name"];
+                $newFileName = trim(com_create_guid(), '{}') . '.' . preg_split("/\./", $_FILES["file"]["name"])[1];
 
-                //if (file_exists("../ProductImages/" . $newFileName)) {
-                if (file_exists(__DIR__ ."./../../ProductImages/" . $newFileName)) {
+                //   if (file_exists("../ProductImages/" . $newFileName)) {
+                if (file_exists(__DIR__ . "./../../ProductImages/" . $newFileName)) {
                     echo "already exists";
                 } else {
                     move_uploaded_file($_FILES["file"]["tmp_name"],
-                        //"../ProductImages/" . $newFileName);
-                        __DIR__ ."./../../ProductImages/" . $newFileName);
+                        // "../ProductImages/" . $newFileName);
+                        __DIR__ . "./../../ProductImages/" . $newFileName);
                     return $newFileName;
                 }
             }
@@ -106,19 +109,20 @@ Class ProductController
         }
     }
 
-    /**
-     * Update row in table.
-     */
     public function UpdateProduct()
     {
+        if (isset($_POST['id']) && ($_POST['name']) && ($_POST['description']) && ($_POST['price'])) {
+            $id = trim(htmlspecialchars($_POST['id'], ENT_QUOTES));
+            $name = trim(htmlspecialchars($_POST['name'], ENT_QUOTES));
+            $description = trim(htmlspecialchars($_POST['description'], ENT_QUOTES));
+            $price = trim(htmlspecialchars($_POST['price'], ENT_QUOTES));
+            $image = $this->UploadImage();
 
-
-        /* if (isset($_GET['id'])) {
-             $this->model->UpdateProduct($_GET['id']);
-         } else {
-             echo "No id, couldn't update!";
-         }
-         $this->Index();*/
+            // need to update categories
+            $this->model->UpdateProduct($id, $name, $description, $price, $image);
+            $this->model->UpdateProductCategories($id, $_POST['categories']);
+        }
+        $this->Index();
     }
 
     /**

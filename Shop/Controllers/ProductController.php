@@ -28,24 +28,17 @@ class ProductController
         if (isset($_GET['id'])) {
             $id = $_GET['id'];
             $product = $this->model->GetById($id);
-            //var_dump($product);
-
             $categories = $this->model->GetProductCategories($id);
-            // var_dump($categories);
-
             $uniqueProducts = array();
             foreach ($categories as $category) {
-                $products = $this->model->GetProductsByCategoryId($category['CID']);
-                //  var_dump($products);
-                foreach ($products as $uniqueProduct) {
-                    if (!isset($uniqueProducts [$uniqueProduct['Id']])) {
-                        $uniqueProducts[$uniqueProduct['Id']] = $uniqueProduct;
+                $categoryProducts = $this->model->GetProductsByCategoryId($category['CID']);
+                foreach ($categoryProducts as $categoryProduct) {
+                    if (!isset($uniqueProducts [$categoryProduct['Id']])) {
+                        $uniqueProducts[$categoryProduct['Id']] = $categoryProduct;
                     }
                 }
             }
-            //var_dump($uniqueProducts[$id]);
             unset($uniqueProducts[$id]);
-            // var_dump($uniqueProducts);
             include(__DIR__ . "./../Views/ProductDetails.php");
         }
     }

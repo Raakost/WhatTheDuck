@@ -6,25 +6,34 @@
                     <h4 class="card-title">News Editor</h4>
                 </div>
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <label>Title</label>
-                            <input type="text" class="form-control" id="newsTitle">
-                            <label>Description</label>
-                            <textarea id="newsDescription" class="form-control"
-                                      style="min-height: 150px;"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-9">
-                            <label>Image</label>
-                            <div class="custom-file">
-                                <input type="file" name="file">
-                                <label for="file"></label>
+                    <form method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="action" value="CreateNewsStory">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <label>Date</label>
+                                <input type="date" class="form-control" name="date">
                             </div>
                         </div>
-                    </div>
-                    <button class="btn btn-primary" style="float: right;">Save</button>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <label>Title</label>
+                                <input type="text" class="form-control" name="title">
+                                <label>Description</label>
+                                <textarea name="text" class="form-control"
+                                          style="min-height: 150px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <label>Image</label>
+                                <div class="custom-file">
+                                    <input type="file" name="file">
+                                    <label for="file"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" style="float: right;">Save</button>
+                    </form>
                 </div>
             </div>
         </div>

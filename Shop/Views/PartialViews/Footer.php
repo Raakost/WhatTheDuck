@@ -17,23 +17,23 @@
         </div>
         <div class="box">
             <h4 class="footer-headers">LOCATION</h4><br>
-            <p><?php echo $info["Street"]; ?></p>
-            <p><span><?php echo $info["Zipcode"]; ?> </span><span><?php echo $info["City"]; ?></span></p>
-            <p><?php echo $info["Country"]; ?></p>
-            <p><i class="fa fa-fw fa-phone"></i> <?php echo $info["Phone"]; ?></p>
-            <p><i class="fa fa-fw fa-envelope"></i> <?php echo $info["Email"]; ?></p>
+            <p><?php echo $info["Street"] ?></p>
+            <p><span><?php echo $info["Zipcode"] ?> </span><span><?php echo $info["City"] ?></span></p>
+            <p><?php echo $info["Country"] ?></p>
+            <p><i class="fa fa-fw fa-phone"></i> <?php echo $info["Phone"] ?></p>
+            <p><i class="fa fa-fw fa-envelope"></i> <?php echo $info["Email"] ?></p>
 
         </div>
         <div class="box">
             <h4 class="footer-headers">ABOUT</h4><br>
-            <p class="w3-justify"><?php echo $info["Description"]; ?></p>
+            <p class="w3-justify"><?php echo $info["Description"] ?></p>
         </div>
     </div>
 </footer>
 
 <div class="w3-black w3-center w3-padding-32">
     <h5>OPENING HOURS</h5>
-    <ul class="w3-tiny w3-center" style="list-style: none; padding-left: 0; text-align: center;">
+    <ul class="w3-tiny" style="list-style: none; padding-left: 0; text-align: center;">
         <div style="display: inline-block; text-align: left;">
             <?php foreach ($businessHours as $businessHour) {
                 echo ' <li>

@@ -52,40 +52,40 @@ require_once("../DBConnection/DBConnection.php");
         }
 
         switch (strtolower(preg_split("/\?/", $_SERVER['REQUEST_URI']) [0])) {
-            //case '/projects/whattheduck/admin/home.php':
-            case '/whattheduck/admin/home.php':
+            case '/projects/whattheduck/admin/home.php': // LOCAL HOST
+                // case '/whattheduck/admin/home.php':
                 $controller = new HomeController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();
                 } else
                     $controller->Index();
                 break;
-            //case '/projects/whattheduck/admin/product.php':
-            case '/whattheduck/admin/product.php':
+            case '/projects/whattheduck/admin/product.php': // LOCAL HOST
+                // case '/whattheduck/admin/product.php':
                 $controller = new ProductController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();
                 } else
                     $controller->Index();
                 break;
-            //case '/projects/whattheduck/admin/order.php':
-            case '/whattheduck/admin/order.php':
+            case '/projects/whattheduck/admin/order.php': // LOCAL HOST
+                //case '/whattheduck/admin/order.php':
                 $controller = new OrderController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();
                 } else
                     $controller->Index();
                 break;
-            //case '/projects/whattheduck/admin/news.php':
-            case '/whattheduck/admin/news.php':
+            case '/projects/whattheduck/admin/news.php': // LOCAL HOST
+                // case '/whattheduck/admin/news.php':
                 $controller = new NewsController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();
                 } else
                     $controller->Index();
                 break;
-            //case '/projects/whattheduck/admin/special.php':
-            case '/whattheduck/admin/special.php':
+            case '/projects/whattheduck/admin/special.php': // LOCAL HOST
+                //case '/whattheduck/admin/special.php':
                 $controller = new SpecialController();
                 if (!empty($action)) {
                     $controller = $controller->{$action}();

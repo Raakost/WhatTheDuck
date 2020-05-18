@@ -22,8 +22,8 @@ class ProductModel
         try {
             $stmt = $this->db->GetConnection()->prepare(
                 "SELECT * FROM Product P
-                        LEFT JOIN Product_category PC ON P.ID = PC.Product_ID
-                        LEFT JOIN Category C ON C.ID = PC.Category_ID;
+                        INNER JOIN Product_category PC ON P.ID = PC.Product_ID
+                        INNER JOIN Category C ON C.ID = PC.Category_ID;
                         WHERE ID = :ID");
             $stmt->bindParam(":ID", $id);
             $stmt->execute();
@@ -43,8 +43,8 @@ class ProductModel
         try {
             $stmt = $this->db->GetConnection()->prepare(
                 "SELECT P.ID, P.Name, P.Description, P.Price, P.Image, C.Category_name, C.ID CID, IsSpecial FROM Product P 
-                        LEFT JOIN Product_category PC ON P.ID = PC.Product_ID
-                        LEFT JOIN Category C ON C.ID = PC.Category_ID;
+                        INNER JOIN Product_category PC ON P.ID = PC.Product_ID
+                        INNER JOIN Category C ON C.ID = PC.Category_ID;
                         ");
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -78,6 +78,26 @@ class ProductModel
             echo "Exception message - ProductModel model: " . $exception->getMessage();
         }
     }
+
+    public function UpdateProduct($id, $name, $description, $price, $image)
+    {
+        try {
+            $stmt = $this->db->GetConnection()->prepare(
+                "UPDATE Product 
+                            SET Name = :Name, Description = :Description, Price = :Price, Image = :Image
+                            WHERE ID=:ID");
+            $stmt->bindParam(":ID", $id);
+            $stmt->bindParam(":Name", $name);
+            $stmt->bindParam(":Description", $description);
+            $stmt->bindParam(":Price", $price);
+            $stmt->bindParam(":Image", $image);
+            $stmt->execute();
+
+        } catch (PDOException $exception) {
+            echo "Error has occurred: " . $exception->getMessage();
+        }
+    }
+
 
     /**
      * @param $productID
