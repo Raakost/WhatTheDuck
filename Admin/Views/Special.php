@@ -3,7 +3,7 @@
         <div class="col-md-10">
             <div class="card no-border-radius">
                 <div class="card-header">
-                    <h4 class="card-title">Daily Special</h4>
+                    <h4 class="card-title">Daily Special - Not implemented</h4>
                 </div>
                 <div class="card-body">
                     <div class="row">
