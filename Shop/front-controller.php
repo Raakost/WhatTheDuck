@@ -1,9 +1,9 @@
 <?php
 // Models
-require_once("Database/Models/DailySpecialModel.php");
-require_once("Database/Models/NewsModel.php");
-require_once("Database/Models/ProductModel.php");
-require_once("Database/Models/CompanyInfoModel.php");
+require_once("Models/DailySpecialModel.php");
+require_once("Models/NewsModel.php");
+require_once("Models/ProductModel.php");
+require_once("Models/CompanyInfoModel.php");
 // Controllers
 require_once("Controllers/HomeController.php");
 require_once("Controllers/ProductController.php");

@@ -1,10 +1,10 @@
 <?php
 // Models
-require_once("Database/Models/HomeModel.php");
-require_once("Database/Models/ProductModel.php");
-require_once("Database/Models/OrderModel.php");
-require_once("Database/Models/NewsModel.php");
-require_once("Database/Models/SpecialModel.php");
+require_once("Models/HomeModel.php");
+require_once("Models/ProductModel.php");
+require_once("Models/OrderModel.php");
+require_once("Models/NewsModel.php");
+require_once("Models/SpecialModel.php");
 // Controllers
 require_once("Controllers/HomeController.php");
 require_once("Controllers/ProductController.php");

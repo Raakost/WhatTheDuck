@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProductImages/238E8013-CDEB-47A0-AC7E-7477180E39F5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/5E1C2C39-6648-4E8F-B25C-592196007182.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductImages/015D45A2-2AB5-423F-A7BF-A31A5E2C7445.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductImages/33D76A95-CD9E-42BC-8E39-03EA4D7ACA8A.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductImages/582A57FD-3609-4AD8-93B8-1EF9FA31B72D.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductImages/8C308190-E57E-463B-9448-603D8857D80F.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductImages/9D3E2134-B2B1-44BC-A2F3-518C5749B012.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Views/Special.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/Special.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/HomeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/HomeModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/NewsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/NewsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/OrderModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/OrderModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/ProductModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Database/Models/SpecialModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/SpecialModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/front-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Database/Models/CompanyInfoModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Models/CompanyInfoModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Database/Models/DailySpecialModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Models/DailySpecialModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Database/Models/NewsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Models/NewsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Database/Models/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Models/ProductModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +66,11 @@
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\Views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\DBConnection" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Admin" />
+      <recent name="C:\wamp64\www\Projects\WhatTheDuck\DBConnection" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck" />
       <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets\css" />
-      <recent name="C:\wamp64\www\Projects\WhatTheDuck\Shop\assets" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -85,7 +98,8 @@
       <workItem from="1588582841348" duration="2738000" />
       <workItem from="1589279496578" duration="5037000" />
       <workItem from="1589370053244" duration="1317000" />
-      <workItem from="1589440171725" duration="30298000" />
+      <workItem from="1589440171725" duration="30898000" />
+      <workItem from="1589873682865" duration="25000" />
     </task>
     <servers />
   </component>
@@ -141,10 +155,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587927870540" />
-    <state x="2610" y="200" width="737" height="606" key="find.popup" timestamp="1589803436896">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="656" y="252" width="737" height="606" key="find.popup" timestamp="1589873081023">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589480739851" />
+    <state x="656" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589873081023" />
     <state x="2610" y="200" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589803436896" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1587401680527">
       <screen x="0" y="0" width="1920" height="1040" />
