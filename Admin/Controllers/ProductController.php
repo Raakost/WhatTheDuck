@@ -71,7 +71,7 @@ Class ProductController
             $prodId = $this->model->CreateProduct($name, $description, $price, $image);
             $this->model->UpdateProductCategories($prodId, $categories);
         } else {
-            echo "couldn't create product!";
+            echo "couldn't edit product!";
         }
         $this->Index();
     }
@@ -122,7 +122,7 @@ Class ProductController
             $this->model->UpdateProduct($id, $name, $description, $price, $image);
             $this->model->UpdateProductCategories($id, $_POST['categories']);
         }
-        $this->Index();
+        header("Location: product.php");
     }
 
     /**
@@ -135,7 +135,7 @@ Class ProductController
         } else {
             echo "No id, couldn't delete!";
         }
-        $this->Index();
+        header("Location: product.php");
     }
 
 

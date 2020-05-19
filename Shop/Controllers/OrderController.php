@@ -1,4 +1,6 @@
 <?php
-class OrderController {
+
+class OrderController
+{
 
 }

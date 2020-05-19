@@ -22,9 +22,7 @@ class ProductModel
         try {
             $stmt = $this->db->GetConnection()->prepare(
                 "SELECT * FROM Product P
-                        INNER JOIN Product_category PC ON P.ID = PC.Product_ID
-                        INNER JOIN Category C ON C.ID = PC.Category_ID;
-                        WHERE ID = :ID");
+                        WHERE P.ID = :ID");
             $stmt->bindParam(":ID", $id);
             $stmt->execute();
             return $stmt->fetch(PDO::FETCH_ASSOC);

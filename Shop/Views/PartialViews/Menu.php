@@ -22,7 +22,7 @@
     <div class="w3-padding-32 w3-large w3-text-grey" style="font-weight:bold">
         <a href="Product.php" class="w3-bar-item sidebar-link">Shop</a>
         <a href="News.php" class="w3-bar-item sidebar-link">News</a>
-        <a href="#" class="w3-bar-item sidebar-link">Basket</a>
+        <a href="Checkout.php" class="w3-bar-item sidebar-link">Checkout</a>
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold; position: absolute; bottom:0;">
         <a href="#footer" class="w3-bar-item sidebar-link w3-padding">Contact</a>
