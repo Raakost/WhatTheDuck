@@ -40,6 +40,7 @@ class CartController
             }
         }
         $_SESSION['cartItem'] = $this->itemArray;
+
         header("Location: product.php");
     }
 

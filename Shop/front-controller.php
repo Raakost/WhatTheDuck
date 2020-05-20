@@ -56,8 +56,6 @@ require_once("../DBConnection/DBConnection.php");
 
     session_start();
 
-    //var_dump($_SESSION['cartItem']);
-
     $action = "";
 
     if (isset($_GET['action']) && !empty($_GET['action'])) {
@@ -67,6 +65,7 @@ require_once("../DBConnection/DBConnection.php");
         $action = $_POST['action'];
     }
     $cartController = new CartController();
+    var_dump($cartController->GetCart());
 
     switch (strtolower(preg_split("/\?/", $_SERVER['REQUEST_URI']) [0])) {
         case '/projects/whattheduck/shop/cart.php' : // LOCAL HOST

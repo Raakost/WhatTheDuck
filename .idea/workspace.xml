@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProductImages/8F8400A6-9675-460D-8A30-DB9EE9352198.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Controllers/SpecialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/SpecialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Models/NewsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/NewsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Admin/Models/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/ProductModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CheckoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/CompanyInfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CompanyInfoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/DailySpecialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/DailySpecialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/NewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Models/NewsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Models/NewsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
     </list>
@@ -103,7 +87,7 @@
       <workItem from="1589370053244" duration="1317000" />
       <workItem from="1589440171725" duration="30898000" />
       <workItem from="1589873682865" duration="23300000" />
-      <workItem from="1589978052142" duration="2913000" />
+      <workItem from="1589978052142" duration="4209000" />
     </task>
     <servers />
   </component>
