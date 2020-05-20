@@ -12,6 +12,9 @@ class NewsModel
         $this->db = new DBConnection();
     }
 
+    /**
+     * @return array
+     */
     public function GetAll()
     {
         try {
@@ -24,6 +27,9 @@ class NewsModel
 
     }
 
+    /**
+     * @return array
+     */
     public function GetLatestFour()
     {
         try {
@@ -35,6 +41,10 @@ class NewsModel
         }
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function GetById($id)
     {
         try {

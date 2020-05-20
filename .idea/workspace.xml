@@ -2,30 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProductImages/1952EDED-F746-4F26-8ADF-0D0BBE142BF3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/2D54A1A9-E3E9-423F-9081-2D8DC9202F61.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/37FB8D54-E115-4241-AAC2-3BA45024E8CD.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/64E850A5-A16E-4C2B-A34C-CE28777CAD02.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/665AA764-8240-484F-805C-3A39399CB615.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/ACABFECD-01A1-441C-915B-310F8142CB79.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/BB3A1A15-AC6A-42E3-8606-F6DDC94ADB8A.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/CA2E5D36-AD4A-44F1-9491-D116698C0D89.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/CBCDFB5B-5807-44B4-BB66-6BD46AA9A4DE.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/DA1E919A-87A4-414A-9676-F83F2F6AA873.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/E4F77743-127F-43E6-9E1A-91C41151DC48.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/E5BBC97E-E506-4321-8017-8292B34CF401.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/EF235612-E40F-4034-B0FD-C742F710F4FA.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductImages/F96DC319-E393-4D96-B9B4-DF294E55036D.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Controllers/CheckoutController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Models/CheckoutModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/Checkout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductImages/8F8400A6-9675-460D-8A30-DB9EE9352198.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/SpecialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/SpecialController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Models/NewsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/NewsModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Admin/Models/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/ProductModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/PartialViews/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/CompanyInfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CompanyInfoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/DailySpecialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/DailySpecialController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Models/NewsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Models/NewsModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Views/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +102,8 @@
       <workItem from="1589279496578" duration="5037000" />
       <workItem from="1589370053244" duration="1317000" />
       <workItem from="1589440171725" duration="30898000" />
-      <workItem from="1589873682865" duration="20040000" />
+      <workItem from="1589873682865" duration="23300000" />
+      <workItem from="1589978052142" duration="2913000" />
     </task>
     <servers />
   </component>
@@ -163,11 +159,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587927870540" />
-    <state x="660" y="434" width="737" height="606" key="find.popup" timestamp="1589887025866">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2610" y="200" width="737" height="606" key="find.popup" timestamp="1589979012084">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="660" y="434" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589887025866" />
-    <state x="2610" y="200" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589803436896" />
+    <state x="660" y="434" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589961512011" />
+    <state x="2610" y="200" width="737" height="606" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589979012084" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1587401680527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

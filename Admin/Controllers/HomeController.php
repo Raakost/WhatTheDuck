@@ -4,6 +4,9 @@ class HomeController
 {
     private $model;
 
+    /**
+     * HomeController constructor.
+     */
     public function __construct()
     {
         $this->model = new HomeModel();
@@ -22,7 +25,6 @@ class HomeController
 
     /**
      * Update company info.
-     *
      */
     public function UpdateInfo()
     {

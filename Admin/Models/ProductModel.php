@@ -13,7 +13,6 @@ class ProductModel
     }
 
     /**
-     * Get a product.
      * @param $id
      * @return mixed
      */
@@ -33,7 +32,6 @@ class ProductModel
     }
 
     /**
-     * Get all products.
      * @return array
      */
     public function GetAllProducts()
@@ -77,6 +75,13 @@ class ProductModel
         }
     }
 
+    /**
+     * @param $id
+     * @param $name
+     * @param $description
+     * @param $price
+     * @param $image
+     */
     public function UpdateProduct($id, $name, $description, $price, $image)
     {
         try {
@@ -96,10 +101,9 @@ class ProductModel
         }
     }
 
-
     /**
      * @param $productID
-     * Update a product with categories.
+     * @param $categories
      */
     public function UpdateProductCategories($productID, $categories)
     {

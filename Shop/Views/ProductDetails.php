@@ -8,7 +8,10 @@
     <div class="col-md-6">
         <p><?php echo $product['Description'] ?></p>
         <p><?php echo $product['Price'] ?><span><b> DKK</b></span></p>
-        <button class="w3-button w3-black">Add <i class="fa fa-shopping-cart w3-margin-right"></i></button>
+        <form method="post" action="cart.php">
+            <button type="submit" class="w3-button w3-black">Add <i class="fa fa-shopping-cart w3-margin-right"></i></button>
+        </form>
+
     </div>
 </div>
 

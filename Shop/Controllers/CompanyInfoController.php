@@ -12,6 +12,9 @@ class CompanyInfoController
         $this->model = new CompanyInfoModel();
     }
 
+    /**
+     *
+     */
     public function Index()
     {
         $info = $this->model->GetCompanyInfoById();

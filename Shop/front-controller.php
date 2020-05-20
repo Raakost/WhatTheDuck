@@ -56,9 +56,10 @@ require_once("../DBConnection/DBConnection.php");
 
     session_start();
 
-    var_dump($_SESSION['cartItem']);
+    //var_dump($_SESSION['cartItem']);
 
     $action = "";
+
     if (isset($_GET['action']) && !empty($_GET['action'])) {
         $action = $_GET['action'];
     }

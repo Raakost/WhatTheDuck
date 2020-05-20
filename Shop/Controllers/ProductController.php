@@ -12,6 +12,9 @@ class ProductController
         $this->model = new ProductModel();
     }
 
+    /**
+     *
+     */
     public function Index()
     {
         $products = $this->model->GetAll();

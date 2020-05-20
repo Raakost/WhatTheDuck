@@ -4,11 +4,17 @@ class NewsModel
 {
     private $db;
 
+    /**
+     * NewsModel constructor.
+     */
     public function __construct()
     {
         $this->db = new DBConnection();
     }
 
+    /**
+     * @return array
+     */
     public function GetAll()
     {
         try {
@@ -21,6 +27,12 @@ class NewsModel
         }
     }
 
+    /**
+     * @param $date
+     * @param $title
+     * @param $text
+     * @param $image
+     */
     public function CreateNewsStory($date, $title, $text, $image)
     {
        try {

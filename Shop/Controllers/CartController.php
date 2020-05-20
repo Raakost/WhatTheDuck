@@ -27,7 +27,7 @@ class CartController
     }
 
     /**
-     *
+     * Add product to session variable, redirect to product page.
      */
     public function Add()
     {
@@ -40,6 +40,7 @@ class CartController
             }
         }
         $_SESSION['cartItem'] = $this->itemArray;
+        header("Location: product.php");
     }
 
     public function GetCart()
@@ -47,6 +48,9 @@ class CartController
         return $this->itemArray;
     }
 
+    /**
+     *
+     */
     public function Remove()
     {
         if (isset($_POST['productId'])) {
@@ -56,6 +60,9 @@ class CartController
         $_SESSION['cartItem'] = $this->itemArray;
     }
 
+    /**
+     *
+     */
     public function EmptyCart()
     {
         $this->itemArray = [];

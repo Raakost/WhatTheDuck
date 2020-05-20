@@ -14,6 +14,9 @@ class CheckoutController
         $this->model = new CheckoutModel();
     }
 
+    /**
+     *
+     */
     public function Index()
     {
         $cart = $this->cartController->GetCart();
@@ -24,8 +27,9 @@ class CheckoutController
             $cartProducts[$key] = $this->model->GetById($key);
             $cartProducts[$key]['Quantity'] = $value;
         }
-        var_dump($cartProducts);
+
         require(__DIR__ . "./../Views/Checkout.php");
+
     }
 
 

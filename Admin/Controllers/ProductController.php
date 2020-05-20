@@ -4,6 +4,9 @@ Class ProductController
 {
     private $model;
 
+    /**
+     * ProductController constructor.
+     */
     public function __construct()
     {
         $this->model = new ProductModel();
@@ -109,6 +112,9 @@ Class ProductController
         }
     }
 
+    /**
+     *
+     */
     public function UpdateProduct()
     {
         if (isset($_POST['id']) && ($_POST['name']) && ($_POST['description']) && ($_POST['price'])) {

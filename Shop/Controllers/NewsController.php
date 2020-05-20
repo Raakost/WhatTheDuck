@@ -4,17 +4,26 @@ class NewsController
 {
     private $model;
 
+    /**
+     * NewsController constructor.
+     */
     public function __construct()
     {
         $this->model = new NewsModel();
     }
 
+    /**
+     *
+     */
     public function Index()
     {
         $news = $this->model->GetAll();
         require(__DIR__ . "./../Views/News.php");
     }
 
+    /**
+     *
+     */
     public function NewsDetails()
     {
         if (isset($_GET['id'])) {

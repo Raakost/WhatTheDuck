@@ -4,6 +4,9 @@ class NewsController
 {
     private $model;
 
+    /**
+     * NewsController constructor.
+     */
     public function __construct()
     {
         $this->model = new NewsModel();
