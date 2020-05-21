@@ -3,7 +3,7 @@
         <div class="col-md-10">
             <div class="card no-border-radius">
                 <div class="card-header">
-                    <h4 class="card-title">Order Overeview</h4>
+                    <h4 class="card-title">Order Overview</h4>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -11,7 +11,8 @@
                             <thead class="text-primary table-header">
                             <tr>
                                 <th>Id</th>
-                                <th>Date</th>
+                                <th>Order Date</th>
+                                <th>Shipping Date</th>
                                 <th>Customer</th>
                                 <th>Zipcode</th>
                                 <th>Status</th>
@@ -20,45 +21,36 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <form action="">
-                                <tr style="font-size: 12px;">
-                                    <td style="padding: 10px;">514</td>
-                                    <td>15:37 - 14.03.2020</td>
-                                    <td style="padding: 10px;">Charles Bronson</td>
-                                    <td>8600</td>
+
+                            <?php foreach ($orders as $item) {
+                                echo '
+                                  <tr style="font-size: 12px;">
+                                    <td style="padding: 10px;">' . $item['ID'] . '</td>
+                                    <td>' . $item['Orderdate'] . '</td>
+                                    <td>' . $item['Shippingdate'] . '</td>
+                                    <td style="padding: 10px;">' . $item['Firstname'] . " " . $item['Lastname'] . '</td>
+                                    <td>' . $item['Zipcode'] . '</td>
                                     <td style="padding: 10px;">
-                                        <select class="select">
+                                      <form method="post" action="">
+                                        <input type="hidden" name="action" value="ShipOrder"/>
+                                        <input type="hidden" name="orderId" value="' . $item['ID'] . '"/>
+                                        <select ' . ($item['Shippingdate'] == null ? '' : 'disabled="disabled"') . ' class="select changeShippingStatus">
                                             <option>Placed</option>
-                                            <option>Shipped</option>
+                                            <option ' . ($item['Shippingdate'] == null ? '' : 'selected="selected"') . '>Shipped</option>
                                         </select>
+                                      </form>
                                     </td>
-                                    <td style="padding:10px;">299 dkk</td>
+                                    <td style="padding:10px;">' . $item['TotalPrice'] . ' DKK</td>
                                     <td class="text-right">
-                                        <a href="OrderDetails.php">
+                                        <a href="#">
                                             <p style="text-decoration: underline;">
                                                 Details</p>
                                         </a>
                                     </td>
                                 </tr>
-                                <tr style="font-size: 12px;">
-                                    <td style="padding: 10px;">420</td>
-                                    <td>15:37 - 14.03.2020</td>
-                                    <td style="padding: 10px;">Charlie Brown</td>
-                                    <td>4200</td>
-                                    <td style="padding: 10px;">
-                                        <select class="select">
-                                            <option>Placed</option>
-                                            <option>Shipped</option>
-                                    </td>
-                                    <td style="padding:10px;">299 dkk</td>
-                                    <td class="text-right">
-                                        <a href="OrderDetails.php">
-                                            <p style="text-decoration: underline;">
-                                                Details</p>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </form>
+                                 ';
+                            } ?>
+
                             </tbody>
                         </table>
                     </div>
@@ -69,8 +61,10 @@
 </div>
 <script>
     $(document).ready(function () {
-        $('#order-table').DataTable({
+        $('#order-table').DataTable({});
 
+        $('#order-table').on('change', '.changeShippingStatus', (e) => {
+            $(e.target).closest('form').submit();
         });
     });
 </script>

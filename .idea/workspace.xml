@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Shop/Controllers/OrderConfirmController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop/Views/OrderConfirm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CheckoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Models/CheckoutModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Models/CheckoutModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/Checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Models/OrderModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Models/OrderModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/Views/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Admin/Views/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/OrderController.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,7 @@
       <workItem from="1589370053244" duration="1317000" />
       <workItem from="1589440171725" duration="30898000" />
       <workItem from="1589873682865" duration="23300000" />
-      <workItem from="1589978052142" duration="14211000" />
+      <workItem from="1589978052142" duration="23439000" />
     </task>
     <servers />
   </component>
