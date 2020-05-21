@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dcebd0-233e-4542-842c-1cdcece79ba7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Shop/Controllers/OrderConfirmController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shop/Views/OrderConfirm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/ProductDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Models/CheckoutModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Models/CheckoutModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shop/Views/Checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/Views/Checkout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shop/front-controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Shop/front-controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +91,7 @@
       <workItem from="1589370053244" duration="1317000" />
       <workItem from="1589440171725" duration="30898000" />
       <workItem from="1589873682865" duration="23300000" />
-      <workItem from="1589978052142" duration="4209000" />
+      <workItem from="1589978052142" duration="14211000" />
     </task>
     <servers />
   </component>
@@ -126,10 +130,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1183" y="339" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1585128463548" />
-    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1589917066184">
+    <state x="794" y="444" key="NewPhpFileDialog" timestamp="1590002342578">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589917066184" />
+    <state x="794" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590002342578" />
     <state x="2714" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1585222610416" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1586720666224">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -152,9 +156,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587401680527" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586516576054">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589999724285">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586516576054" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589999724285" />
   </component>
 </project>

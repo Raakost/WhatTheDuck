@@ -13,6 +13,7 @@ require_once("Controllers/NewsController.php");
 require_once("Controllers/DailySpecialController.php");
 require_once("Controllers/CheckoutController.php");
 require_once("Controllers/CartController.php");
+require_once("Controllers/OrderConfirmController.php");
 // Database
 require_once("../DBConnection/Constants.php");
 require_once("../DBConnection/DBConnection.php");
@@ -65,7 +66,6 @@ require_once("../DBConnection/DBConnection.php");
         $action = $_POST['action'];
     }
     $cartController = new CartController();
-    var_dump($cartController->GetCart());
 
     switch (strtolower(preg_split("/\?/", $_SERVER['REQUEST_URI']) [0])) {
         case '/projects/whattheduck/shop/cart.php' : // LOCAL HOST
@@ -111,6 +111,14 @@ require_once("../DBConnection/DBConnection.php");
         case '/projects/whattheduck/shop/checkout.php': // LOCAL HOST
             // case '/whattheduck/shop/checkout.php':
             $controller = new CheckoutController($cartController);
+            if (!empty($action)) {
+                $controller = $controller->{$action}();
+            } else
+                $controller->Index();
+            break;
+        case '/projects/whattheduck/shop/orderconfirm.php': // LOCAL HOST
+            // case '/whattheduck/shop/orderconfirm.php':
+            $controller = new OrderConfirmController();
             if (!empty($action)) {
                 $controller = $controller->{$action}();
             } else

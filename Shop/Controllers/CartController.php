@@ -3,7 +3,6 @@
 class CartController
 {
     public $itemArray = [];
-    public $newItemArray;
 
     /**
      * CartController constructor.
@@ -16,7 +15,7 @@ class CartController
     }
 
     /**
-     * Load items from session.
+     * Get items from session.
      * @param $existingItems
      */
     public function ExistingCart($existingItems)
@@ -27,7 +26,7 @@ class CartController
     }
 
     /**
-     * Add product to session variable, redirect to product page.
+     * Add product to session, redirect to product page.
      */
     public function Add()
     {
@@ -40,17 +39,19 @@ class CartController
             }
         }
         $_SESSION['cartItem'] = $this->itemArray;
-
-        header("Location: product.php");
+        header("Location: " . $_SERVER['HTTP_REFERER']);
     }
 
+    /**
+     * @return array
+     */
     public function GetCart()
     {
         return $this->itemArray;
     }
 
     /**
-     *
+     * Remove one item from shopping cart.
      */
     public function Remove()
     {
@@ -59,10 +60,11 @@ class CartController
             unset($this->itemArray[$productId]);
         }
         $_SESSION['cartItem'] = $this->itemArray;
+        header("Location: " . $_SERVER['HTTP_REFERER']);
     }
 
     /**
-     *
+     * Remove all items from the shopping cart.
      */
     public function EmptyCart()
     {

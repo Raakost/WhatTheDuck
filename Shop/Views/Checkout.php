@@ -108,7 +108,8 @@
 <div class="row">
     <div class="col-50">
         <div class="container">
-            <form method="post" action="/action_page.php">
+            <form method="post">
+                <input type="hidden" name="action" value="CreateOrder">
                 <div class="row">
                     <div class="col-25">
                         <h3>Shipping Address</h3>
@@ -116,7 +117,7 @@
                         <input type="text" name="firstname" required>
 
                         <label for="lastname">Last Name</label>
-                        <input type="text" name="firstname" required>
+                        <input type="text" name="lastname" required>
 
                         <label for="street">Streetname & No.</label>
                         <input type="text" name="street">
@@ -175,7 +176,11 @@
                     echo '
                      <tr>
                     <td>
-                        <button class="w3-btn" style="box-shadow: none; font-weight: bold; color: red;">X</button>
+                        <form method="post" action="cart.php">
+                            <input type="hidden" name="action" value="Remove">
+                            <input type="hidden" name="productId" value="' . $product['ID'] . '">
+                            <button type="submit" class="w3-btn" style="box-shadow: none; font-weight: bold; color: red;">X</button>
+                        </form>
                     </td>
                     <td><img style="width: 40px;" src="../ProductImages/' . $product['Image'] . '"></td>
                     <td><span>' . $product['Name'] . '</span></td>
@@ -188,7 +193,8 @@
                 </tbody>
             </table>
             <hr>
-            <p><b>Order Total:</b><span class="price" style="color:black"><b><?php echo $orderTotal ?> DKK</b></span></p>
+            <p><b>Order Total:</b><span class="price" style="color:black"><b><?php echo $orderTotal ?> DKK</b></span>
+            </p>
 
 
         </div>
